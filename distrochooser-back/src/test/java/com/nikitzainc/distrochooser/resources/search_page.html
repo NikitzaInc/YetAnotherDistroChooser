@@ -1,0 +1,1842 @@
+
+<!DOCTYPE HTML><html><head>
+<link rel="me" href="https://mastodon.social/@distrowatch">
+<title>DistroWatch.com: Put the fun back into computing. Use Linux, BSD.</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="description" content="News and feature lists of Linux and BSD distributions." >
+<meta name="keywords" content="distrowatch, linux, android, bsd, unix, distro, distros, distributions, ubuntu, debian, suse, opensuse, fedora, red hat, centos, mageia, knoppix, gentoo, slackware, freebsd, openbsd" >
+<meta name="author" content="DistroWatch" >
+<!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" >
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold,bolditalic&amp;subset=Latin" > 
+-->
+<link rel="alternate" type="application/rss+xml" title="DistroWatch: Latest News" href="news/dw.xml" >
+<link rel="alternate" type="application/rss+xml" title="DistroWatch: Latest Distributions" href="news/dwd.xml" >
+<link rel="alternate" type="application/rss+xml" title="DistroWatch: Latest Packages" href="news/dwp.xml" >
+<link rel="alternate" type="application/rss+xml" title="DistroWatch: Latest Ratings" href="news/ratings.xml" >
+<link rel="alternate" type="application/rss+xml" title="DistroWatch: DistroWatch Weekly" href="news/dww.xml" >
+<link rel="alternate" type="application/rss+xml" title="DistroWatch: Latest DWW Podcast (MP3)" href="news/podcast.xml" >
+<link rel="alternate" type="application/rss+xml" title="DistroWatch: Latest DWW Podcast (OGG)" href="news/oggcast.xml" >
+<link rel="icon" href="favicon.ico" type="image/ico" >
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+
+<!-- Media.net header bidding code -->
+<script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CUK7Z630" async="async"></script>
+<script type = "text/javascript">
+(function () {
+window.advBidxc = window.advBidxc || {};
+window.advBidxc.customerId = "8CU7XD8P5"; // Customer ID
+window.advBidxc.domain = window.location.hostname;
+window.advBidxc.version = 5.1;
+window.advBidxc.startTime = new Date().getTime();
+function loadScript(tagSrc) {
+var scriptTag = document.createElement('script'),
+placeTag = document.getElementsByTagName("script")[0];
+scriptTag.type = 'text/javascript';
+scriptTag.async = true;
+scriptTag.src = tagSrc;
+placeTag.parentNode.insertBefore(scriptTag, placeTag);}
+var mnSrc = 'https://hbx.media.net/bidexchange.js?cid=' +
+window.advBidxc.customerId +
+"&version=" + window.advBidxc.version + '&dn=' +
+window.advBidxc.domain;
+loadScript(mnSrc); })();
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2079470915748165"
+     crossorigin="anonymous"></script>
+<!-- 
+<script type="text/javascript">window.cookieconsent_options = {"message":"This website uses cookies to customize your experience. Third-party cookies may also be used by our advertisers.","dismiss":"Accept","learnMore":"Learn more","link":"https://distrowatch.com/dwres.php?resource=privacy","theme":"dark-btm"};</script><script type="text/javascript" src="js/cookieconsent.latest.min2.js"></script>--> 
+<link rel="stylesheet" href="css/distro.css" type="text/css"><style type="text/css"></style>
+</head>
+<body>
+<table style="width: 100%; border: 2px silver groove; background-color: #f6edc8; table-layout: auto">
+  <tr>
+    <td style="width: 468px; text-align: left; border: 0px">
+      <table style="width: 468px; border-style: none;">
+        <tr style="border-style: none;">
+<td style="border-style: none;">        <a href="./"><img src="images/cpxtu/dwbanner.png"  style="border-style: none;" title="DistroWatch.com. Put the fun back into computing, use Linux, BSD." /></a>
+</td>        </tr></table>
+      <table style="width: 468px">
+        <tr>
+          <td style="border: 0px; width: 230px; text-align: center">
+            <form style="height: 1%" action="table.php" method="get">
+            <input style="width: 160px; font-size: 12px;" type="text" name="distribution" value="Type Distribution Name" onfocus="value=''" maxlength="36" />
+            <input style="width: 50px" type="submit" value="Go" />
+            </form>
+          </td>
+          <td style="border: 0px; width: 230px; text-align: center">
+            <form style="height: 1%" action="table.php" method="get">
+            <select style="width: 160px" name="distribution" onchange="location = this.options[this.selectedIndex].value;">
+<option selected value="">Select Distribution</option>
+<option value="3cx">3CX</option><option value="4mlinux">4MLinux</option><option value="ac">Accessible-Coconut</option><option value="acoros">AçorOS</option><option value="acreetionos">AcreetionOS</option><option value="adelie">Adélie</option><option value="aeon">Aeon</option><option value="aerynos">AerynOS</option><option value="agarimos">AgarimOS</option><option value="alienos">Alien-OS</option><option value="alma">AlmaLinux</option><option value="alpine">Alpine</option><option value="alt">ALT</option><option value="alteros">AlterOS</option><option value="anduin">AnduinOS</option><option value="antix">antiX</option><option value="anubitux">AnuBitux</option><option value="aosc">AOSC</option><option value="arch">Arch</option><option value="archcraft">Archcraft</option><option value="archman">Archman</option><option value="archriot">Archriot</option><option value="arcos">arcOS</option><option value="arkane">Arkane</option><option value="armbian">Armbian</option><option value="artix">Artix</option><option value="asahi">Asahi</option><option value="asmi">Asmi</option><option value="astra">Astra</option><option value="athena">Athena</option><option value="atz">ATZ Linux</option><option value="aurora">Aurora</option><option value="austrumi">AUSTRUMI</option><option value="avlinux">AV Linux</option><option value="axos">AxOS</option><option value="backbox">BackBox</option><option value="batocera">Batocera</option><option value="bazzite">Bazzite</option><option value="bedrock">Bedrock</option><option value="berry">Berry</option><option value="berserkarch">Berserk Arch</option><option value="besgnulinux">Besgnulinux</option><option value="bicom">Bicom</option><option value="biglinux">BigLinux</option><option value="blade">Blade</option><option value="blendos">blendOS</option><option value="bluefin">Bluefin</option><option value="blueonyx">BlueOnyx</option><option value="bluestar">Bluestar</option><option value="bodhi">Bodhi</option><option value="boss">BOSS</option><option value="bros">Br OS</option><option value="brgv">BRGV-OS</option><option value="bsdrp">BSDRP</option><option value="bunsenlabs">BunsenLabs</option><option value="cachyos">CachyOS</option><option value="caine">CAINE</option><option value="calam">Calam</option><option value="calculate">Calculate</option><option value="canaima">Canaima</option><option value="catbird">Catbird</option><option value="centos">CentOS</option><option value="chimera">Chimera</option><option value="chromeos">ChromeOS</option><option value="circle">Circle</option><option value="clearndr">Clear NDR</option><option value="clonezilla">Clonezilla</option><option value="cloudlinux">CloudLinux</option><option value="commodore">Commodore</option><option value="crowz">CROWZ</option><option value="cbpp">Crunchbangplusplus</option><option value="crux">CRUX</option><option value="cuerdos">CuerdOS</option><option value="d77void">d77void</option><option value="damnsmall">Damn Small</option><option value="daphile">Daphile</option><option value="datlinux">DAT</option><option value="debian">Debian</option><option value="debianedu">Debian Edu</option><option value="deblight">DebLight</option><option value="deepin">deepin</option><option value="dekuve">DEKUVE</option><option value="desert">DESERT</option><option value="devuan">Devuan</option><option value="dietpi">DietPi</option><option value="ditana">Ditana</option><option value="drparted">Dr.Parted</option><option value="dragonflybsd">DragonFly</option><option value="dragonos">DragonOS</option><option value="drauger">Drauger</option><option value="dynebolic">Dynebolic</option><option value="dynfi">DynFi</option><option value="easyos">EasyOS</option><option value="edubuntu">Edubuntu</option><option value="elegance">ELEGANCE</option><option value="elementary">elementary</option><option value="elive">Elive</option><option value="elysiaos">ElysiaOS</option><option value="emmabuntus">Emmabuntüs</option><option value="enos">EN-OS</option><option value="endeavour">EndeavourOS</option><option value="endless">Endless</option><option value="escuelas">Escuelas</option><option value="etertics">EterTICs</option><option value="exe">Exe</option><option value="exherbo">Exherbo</option><option value="expirion">Expirion</option><option value="extix">ExTiX</option><option value="exton">Exton</option><option value="extrox">extrox</option><option value="fatdog">Fatdog64</option><option value="fedora">Fedora</option><option value="ferenos">Feren</option><option value="finnix">Finnix</option><option value="flatcar">Flatcar</option><option value="flora">Flora</option><option value="fluxuan">Fluxuan</option><option value="freebsd">FreeBSD</option><option value="freedombox">FreedomBox</option><option value="freeduc">Freeduc</option><option value="freeloader">Freeloader</option><option value="fuguita">FuguIta</option><option value="funos">FunOS</option><option value="fuss">FUSS</option><option value="fydeos">FydeOS</option><option value="gabee">gabeeOSLinux</option><option value="garuda">Garuda</option><option value="gentoo">Gentoo</option><option value="ghostbsd">GhostBSD</option><option value="glf">GLF</option><option value="gnomeos">GNOME OS</option><option value="gnoppix">Gnoppix</option><option value="gnuinos">Gnuinos</option><option value="gobo">GoboLinux</option><option value="gooroom">Gooroom</option><option value="gparted">GParted</option><option value="grapheneos">GrapheneOS</option><option value="green">Green</option><option value="greenbang">GreenBANG</option><option value="grml">Grml</option><option value="guideos">GuideOS</option><option value="guixsd">Guix System</option><option value="gxde">GXDE</option><option value="hackeros">HackerOS</option><option value="haiku">Haiku</option><option value="hamonikr">HamoniKR</option><option value="hardenedbsd">HardenedBSD</option><option value="heliumos">HeliumOS</option><option value="huayra">Huayra</option><option value="hydrapwk">HydraPWK</option><option value="hyperbola">Hyperbola</option><option value="ideal">iDeal</option><option value="iode">iodéOS</option><option value="ipfire">IPFire</option><option value="kali">Kali</option><option value="kamarada">Kamarada</option><option value="kanotix">KANOTIX</option><option value="kaos">KaOS</option><option value="kdelinux">KDE Linux</option><option value="kdeneon">KDE neon</option><option value="kicksecure">Kicksecure</option><option value="kiro">Kiro</option><option value="kodachi">Kodachi</option><option value="kolibri">KolibriOS</option><option value="kubuntu">Kubuntu</option><option value="kumander">Kumander</option><option value="kwort">Kwort</option><option value="lainos">LainOS</option><option value="lakka">Lakka</option><option value="langitketujuh">LangitKetujuh</option><option value="lazylinux">LazyLinux</option><option value="lernstick">Lernstick</option><option value="lfs">LFS</option><option value="librazik">LibraZiK</option><option value="libreelec">LibreELEC</option><option value="lingmo">Lingmo</option><option value="linuxschools">Linux Schools</option><option value="linuxcnc">LinuxCNC</option><option value="linuxconsole">LinuxConsole</option><option value="linuxfx">Linuxfx</option><option value="linuxhub">LinuxHub</option><option value="lite">Lite</option><option value="liveraizo">Live Raizo</option><option value="liya">Liya</option><option value="lliurex">LliureX</option><option value="locos">Loc-OS</option><option value="luberri">Luberri</option><option value="lubuntu">Lubuntu</option><option value="lxpup">LxPup</option><option value="mabox">Mabox</option><option value="macaroni">Macaroni</option><option value="maemoleste">Maemo Leste</option><option value="mageia">Mageia</option><option value="magos">MagOS</option><option value="maid">mAid</option><option value="makulu">MakuluLinux</option><option value="manjaro">Manjaro</option><option value="mauna">Mauna</option><option value="max">MAX</option><option value="melawy">Melawy</option><option value="midnightbsd">MidnightBSD</option><option value="milis">Milis</option><option value="minios">MiniOS</option><option value="mint">Mint</option><option value="miracle">MIRACLE</option><option value="mobian">Mobian</option><option value="mocaccinoos">MocaccinoOS</option><option value="modicia">MODICIA</option><option value="modos">MODOS</option><option value="murena">Murena</option><option value="mx">MX Linux</option><option value="nebios">NebiOS</option><option value="nemesis">Nemesis</option><option value="neptune">Neptune</option><option value="netbsd">NetBSD</option><option value="nethsecurity">NethSecurity</option><option value="nethserver">NethServer</option><option value="netrunner">Netrunner</option><option value="nexentastor">NexentaStor</option><option value="nitrux">Nitrux</option><option value="nixos">NixOS</option><option value="nobara">Nobara</option><option value="nomadbsd">NomadBSD</option><option value="nst">NST</option><option value="nutyx">NuTyX</option><option value="nyarch">Nyarch</option><option value="obarun">Obarun</option><option value="obsidianos">ObsidianOS</option><option value="omarchy">Omarchy</option><option value="omegalinux">OmegaLinux</option><option value="omnios">OmniOS</option><option value="openbsd">OpenBSD</option><option value="openeuler">openEuler</option><option value="openindiana">OpenIndiana</option><option value="openkylin">openKylin</option><option value="openmamba">openmamba</option><option value="openmandriva">OpenMandriva</option><option value="openmediavault">OpenMediaVault</option><option value="opensuse">openSUSE</option><option value="opnsense">OPNsense</option><option value="oracle">Oracle</option><option value="oreon">Oreon</option><option value="osintvm">OSINT VM</option><option value="osmc">OSMC</option><option value="osolinux">OsoLinux</option><option value="ovios">OviOS</option><option value="pakos">PakOS</option><option value="paldo">paldo</option><option value="parabola">Parabola</option><option value="parch">Parch</option><option value="pardus">Pardus</option><option value="parrot">Parrot</option><option value="partedmagic">Parted Magic</option><option value="pclinuxos">PCLinuxOS</option><option value="pearl">Pearl</option><option value="pearos">pearOS</option><option value="pelicanhpc">PelicanHPC</option><option value="pentoo">Pentoo</option><option value="peppermint">Peppermint</option><option value="peropesis">Peropesis</option><option value="pfsense">pfSense</option><option value="pikaos">PikaOS</option><option value="pisi">Pisi</option><option value="plamo">Plamo</option><option value="planetatecno">Planeta Tecno</option><option value="pld">PLD</option><option value="plop">Plop</option><option value="popos">Pop!_OS</option><option value="porteus">Porteus</option><option value="porteuskiosk">Porteus Kiosk</option><option value="porteux">PorteuX</option><option value="postmarketos">postmarketOS</option><option value="predator">Predator-OS</option><option value="primtux">PrimTux</option><option value="proxmox">Proxmox</option><option value="puppy">Puppy</option><option value="q4os">Q4OS</option><option value="qlustar">Qlustar</option><option value="quarkos">Quarkos</option><option value="qubes">Qubes</option><option value="quirinux">Quirinux</option><option value="raspios">RasPiOS</option><option value="rds">RDS</option><option value="reactos">ReactOS</option><option value="rebeccablackos">RebeccaBlackOS</option><option value="rebornos">RebornOS</option><option value="recalbox">Recalbox</option><option value="redhat">Red Hat</option><option value="redos">RED OS</option><option value="redcore">Redcore</option><option value="redox">Redox</option><option value="refracta">Refracta</option><option value="refreshos">RefreshOS</option><option value="regata">Regata</option><option value="relianoid">RELIANOID</option><option value="rescuezilla">Rescuezilla</option><option value="rhino">Rhino</option><option value="risc">RISC</option><option value="rlxos">rlxos</option><option value="rockstor">Rockstor</option><option value="rocky">Rocky</option><option value="rosa">ROSA</option><option value="rss">RSS</option><option value="runtu">Runtu</option><option value="salix">Salix</option><option value="sculpt">Sculpt</option><option value="sdesk">SDesk</option><option value="securek">Secure-K</option><option value="secureblue">secureblue</option><option value="securityonion">Security Onion</option><option value="serbian">Serbian</option><option value="shanios">Shanios</option><option value="shebang">Shebang</option><option value="side">Side</option><option value="siduction">siduction</option><option value="skudonet">Skudonet</option><option value="skywave">Skywave</option><option value="slackel">Slackel</option><option value="slackware">Slackware</option><option value="slimbookos">Slimbook OS</option><option value="slint">Slint</option><option value="slitaz">SliTaz</option><option value="smartos">SmartOS</option><option value="smeserver">SME Server</option><option value="smoothwall">Smoothwall</option><option value="snal">Snal</option><option value="solaris">Solaris</option><option value="solus">Solus</option><option value="solydxk">SolydXK</option><option value="soplos">Soplos</option><option value="sparky">SparkyLinux</option><option value="spirit">spirit OS</option><option value="startos">StartOS</option><option value="steamos">SteamOS</option><option value="stormos">StormOS</option><option value="stratos">StratOS</option><option value="supergrub">Super Grub2</option><option value="sle">SUSE</option><option value="synex">Synex</option><option value="syslinuxos">SysLinuxOS</option><option value="systemrescue">SystemRescue</option><option value="t2">T2 Linux</option><option value="tails">Tails</option><option value="talos">Talos</option><option value="tealinux">TeaLinux</option><option value="thinstation">Thinstation</option><option value="tileos">TileOS</option><option value="tinycore">Tiny Core</option><option value="tribblix">Tribblix</option><option value="trisquel">Trisquel</option><option value="tromjaro">TROMjaro</option><option value="truenas">TrueNAS</option><option value="tsurugi">Tsurugi</option><option value="ttos">TTOS</option><option value="turnkey">TurnKey</option><option value="tuxedo">TUXEDO</option><option value="twister">Twister</option><option value="ublinux">UBLinux</option><option value="ubos">UBOS</option><option value="ubports">UBports</option><option value="ubuntu">Ubuntu</option><option value="ubuntubudgie">Ubuntu Budgie</option><option value="ubuntucinnamon">Ubuntu Cinnamon</option><option value="ubuntukylin">Ubuntu Kylin</option><option value="ubuntumate">Ubuntu MATE</option><option value="ubuntudp">Ubuntu Pack</option><option value="ubuntustudio">Ubuntu Studio</option><option value="ubuntusway">Ubuntu Sway</option><option value="ubuntuunity">Ubuntu Unity</option><option value="ufficiozero">Ufficio Zero</option><option value="ultimate">Ultimate</option><option value="ultramarine">Ultramarine</option><option value="umbrelos">umbrelOS</option><option value="uncom">Uncom</option><option value="univention">Univention</option><option value="unraid">Unraid</option><option value="uos">UOS</option><option value="vailuxos">VailuxOS</option><option value="vanilla">Vanilla</option><option value="vendefoul">Vendefoul</option><option value="venom">Venom</option><option value="ventoy">Ventoy</option><option value="vinari">Vinari</option><option value="vincent">Vincent</option><option value="vine">Vine</option><option value="vipnix">Vipnix</option><option value="vitalinux">Vitalinux</option><option value="void">Void</option><option value="volumio">Volumio</option><option value="voyager">Voyager</option><option value="vyos">VyOS</option><option value="wattos">wattOS</option><option value="whonix">Whonix</option><option value="wifislax">Wifislax</option><option value="wmlive">WM Live</option><option value="xcpng">XCP-ng</option><option value="xebian">Xebian</option><option value="xero">XeroLinux</option><option value="xigmanas">XigmaNAS</option><option value="ximper">Ximper</option><option value="xivastudio">XIVA Studio</option><option value="xray">Xray_OS</option><option value="xubuntu">Xubuntu</option><option value="yunohost">YunoHost</option><option value="zenned">Zenned</option><option value="zentyal">Zentyal</option><option value="zenwalk">Zenwalk</option><option value="zephix">Zephix</option><option value="zimaos">ZimaOS</option><option value="zorin">Zorin</option>            </select>
+            <input style="width: 50px" type="submit" value="Go" />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="border: 0px; width: 230px; text-align: center">
+<form target="_blank" method="get" id="search" action="https://duckduckgo.com/">
+  <div style="text-align: center">
+  <input type="hidden" name="sites" value="distrowatch.com"/>
+  <input type="hidden" name="k7" value="#fdffe3"/>
+  <input type="hidden" name="k1" value="-1"/>
+  <input style="width: 160px; font-size: 12px" type="text" name="q" size="24" onfocus="value=''" placeholder="DuckDuckGo Site Search"/>
+  <input style="width: 50px" type="submit" name="sa" value="Go" />
+  </div>
+</form>
+          </td>
+          <td style="border: 0px; width: 230px; text-align: center">
+            <form style="height: 1%" action="random.php">
+            <input style="width: 214px; vertical-align: top" type="submit" value="Random Distribution" />
+            </form>
+          </td>
+        </tr>
+      </table>    </td>
+    <td style="text-align: left; vertical-align: top; border: 0px; width: 100%">
+      <table style="table-layout: auto; width: 100%; ">
+        <tr>
+          <td style="border: 0px; text-align: right; width: 100%"><a href="https://distrowatch.com/?language=EN"><img style="vertical-align: middle" src="images/lbxfnbfzbi/en.png" title="English" /></a> &bull; <a href="https://distrowatch.com/?language=ES"><img style="vertical-align: middle" src="images/lbxfnbfzbi/es.png" title="Spanish" /></a> &bull; <a href="https://distrowatch.com/?language=FR"><img style="vertical-align: middle" src="images/lbxfnbfzbi/fr.png" title="French" /></a> &bull; <a href="https://distrowatch.com/?language=DE"><img style="vertical-align: middle" src="images/lbxfnbfzbi/de.png" title="German" /></a> &bull; <a href="https://distrowatch.com/?language=PT"><img style="vertical-align: middle" src="images/lbxfnbfzbi/pt.png" title="Portuguese" /></a> &bull; <a href="https://distrowatch.com/?language=RU"><img style="vertical-align: middle" src="images/lbxfnbfzbi/ru.png" title="Russian" /></a> &bull; <a href="https://distrowatch.com/?language=JP"><img style="vertical-align: middle" src="images/lbxfnbfzbi/jp.png" title="Japanese" /></a> &bull; <a href="https://distrowatch.com/?language=TW"><img style="vertical-align: middle" src="images/lbxfnbfzbi/tw.png" title="Chinese Traditional" /></a>&nbsp;&nbsp;&nbsp;<a href="index.php?theme=dark"><img style="vertical-align: middle" src="images/lbxfnbfzbi/darkmode.png" title="Dark Mode" /></a>          </td>
+        </tr>
+      </table>
+      <table style="table-layout: auto; width: 100%">
+        <tr>
+          <th class="NavMenu">
+            &nbsp;&bull; <a href="./">Home Page</a>, <a href="/dwres.php?resource=headlines">Headlines</a><br />
+            &nbsp;&bull; <a href="weekly.php?issue=current">DW Weekly</a>, <a href="weekly.php?issue=current&amp;mode=67#comments">Comments</a><br />
+            &nbsp;&bull; <a href="packages.php">Packages</a>, 
+            <a href="dwres.php?resource=package-management">Package Management</a><br />
+            &nbsp;&bull; <a href="dwres.php?resource=glossary">Glossary</a>,             <a href="dwres.php?resource=faq">FAQ</a>,             <a href="index.php?mobile=1">Mobile Site</a>
+          </th>
+          <th class="NavMenu">
+            &nbsp;&bull; <a href="search.php">Search</a>, <a href="dwres.php?resource=sitemap">Sitemap</a><br />
+            &nbsp;&bull; <a href="dwres.php?resource=major">Major Distributions</a><br />
+            &nbsp;&bull; <a href="dwres.php?resource=submit">Submit Distribution</a><br />
+            &nbsp;&bull; <a href="weekly.php?issue=current#upcoming">Upcoming Releases</a><br />
+          </th>
+          <th class="NavMenu">
+            &nbsp;&bull; <a href="dwres.php?resource=about">About DistroWatch</a><br />
+            &nbsp;&bull; <a href="dwres.php?resource=beginners-intro">Beginner's Guide</a><br />
+            &nbsp;&bull; <a href="dwres.php?resource=bittorrent">Torrents</a>,
+            &nbsp;<a href="dwres.php?resource=popularity">Page Hit Ranking</a><br />
+            &nbsp;&bull; <a href="dwres.php?resource=advertise">Advertise</a>
+          </th>
+        </tr>
+      </table>
+      <table style="table-layout: auto; width: 100%; border-style: none;">
+        <tr border-style: none;>
+<table style="width: 100%; border-style: none;"
+  <tr border-style: none;>
+    <td class="NewsLogo" style="border-style: none; padding-top: 2px; padding-bottom: 2px; text-align: right; background-color: #f6efc8; width: 100%">
+<span style="vertical-align: bottom; color: silver">DistroWatch.com is sponsored by </span><a href="https://www.3cx.com/"><img style="vertical-align: middle" src="images/k/3cx-19.png" alt="3CX - Software Based VoIP IP PBX / PABX" title="3CX - Software Based VoIP IP PBX / PABX"></a>    </td>
+  </tr>
+</table>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<link rel="stylesheet" href="/css/nav-menu.css" type="text/css" />
+
+<ul class="dropmenu">
+  <li class="dropdown">
+     <a href="javascript:void(0)" class="dropbtn" onclick="MenuFunction(1)">News/Opinions/Reviews &#9660;</a>
+     <div class="dropdown-content" id="myDropdown1">
+      <a href="/">Release Announcements</a>
+      <a href="dwres.php?resource=headlines">News and Headlines</a>
+      <a href="weekly.php?issue=current">DW Weekly</a>
+      <a href="weekly.php">DW Weekly / Review Archive</a>
+      <a href="dwres.php?resource=article-search">News/Article Search</a>
+      <a href="weekly.php?issue=current#upcoming">Upcoming Releases</a>
+      <a href="polls.php">Opinion Polls</a>
+      <a href="dwres.php?resource=ratings">Visitor Ratings &amp; Reviews</a>
+      <a href="dwres.php?resource=ranking">Project Rankings by Ratings</a>
+      <a href="dwres.php?resource=podcast-mobile">Podcasts, Newsletters &amp; Reviews</a>
+    </div>
+
+  </li>
+  <li class="dropdown">
+     <a href="javascript:void(0)" class="dropbtn" onclick="MenuFunction(2)">Packages &#9660;</a>
+     <div class="dropdown-content" id="myDropdown2">
+      <a href="packages.php">Packages We Track</a>
+      <a href="dwres.php?resource=package-management">Package Management</a>
+      <a href="dwres.php?resource=compare-packages">Compare Packages Across Distros</a>
+      <a href="dwres.php?resource=package-in-distro">Show package versions for all distros</a>
+    </div>
+
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="MenuFunction(3)">Find/Submit Distro &#9660;</a>
+    <div class="dropdown-content" id="myDropdown3">
+      <a href="search.php">Search For Distro</a>
+      <a href="search.php#advanced">Search For Distro - Advanced</a>
+      <a href="dwres.php?resource=major">Major Distributions</a>
+      <a href="new#new">Waiting List</a>
+      <a href="dwres.php?resource=submit">Submit Distribution</a>
+      <a href="dwres.php?resource=origin">Distributions Origin</a>
+      <a href="dwres.php?resource=discontinued">Discontinued Distributions</a>
+      <a href="random.php">Random Distribution</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="MenuFunction(4)">Tutorials &amp; Learning &#9660;</a>
+    <div class="dropdown-content" id="myDropdown4">
+      <a href="dwres.php?resource=beginners-intro">Beginner's Guide</a>
+      <a href="dwres.php?resource=article-search">Search For An Article</a>
+      <a href="qanda.php">Questions and Answers Columns</a>
+      <a href="tips.php">Tips and Tricks Columns</a>
+      <a href="tips.php">Myths And Misunderstandings Columns</a>
+      <a href="dwres.php?resource=glossary">Glossary</a>
+      <a href="dwres.php?resource=man-pages">Simplified Manual Pages</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="MenuFunction(5)">Related Resources &#9660;</a>
+    <div class="dropdown-content" id="myDropdown5">
+      <a href="dwres.php?resource=links">Other Operating Systems</a>
+      <a href="dwres.php?resource=hardware">Compatible Hardware</a>
+      <a href="dwres.php?resource=security">Security Advisories</a>
+      <a href="dwres.php?resource=bittorrent">Torrents</a>
+      <a href="dwres.php?resource=upload-torrent">Upload Torrents</a>
+      <a href="dwres.php?resource=keys">Distro Verification Keys</a>
+      <a href="dwres.php?resource=family-tree">Visual Distro Family Tree</a>
+      <a href="dwres.php?resource=faq#lugs">Linux User Groups</a>
+    </div>
+  </li>
+
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="MenuFunction(6)">DistroWatch.com &#9660;</a>
+    <div class="dropdown-content" id="myDropdown6">
+      <a href="dwres.php?resource=about">About DistroWatch</a>
+      <a href="dwres.php?resource=contact">Contact Us</a>
+      <a href="dwres.php?resource=popularity">Page Hit Ranking</a>
+      <a href="dwres.php?resource=trending">Page Hit Trends</a>
+      <a href="dwres.php?resource=advertise">Advertise</a>
+      <a href="dwres.php?resource=faq">Frequently Asked Questions</a>
+      <a href="dwres.php?resource=contributing">Contributing</a>
+      <a href="dwres.php?resource=donate">Donate</a>
+      <a href="dwres.php?resource=donations">Our Donations Programme</a>
+    </div>
+  </li>
+
+</ul>
+
+
+<script language="JavaScript">
+<!--
+
+function ClearMenus()
+{
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+    }
+}
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function MenuFunction(num) {
+    var full_name = "myDropdown" + num;
+    var already_visible = false;
+
+    if ( document.getElementById(full_name).classList.contains('show') )
+       already_visible = true;
+    ClearMenus();
+    if (already_visible == false)
+       document.getElementById(full_name).classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    ClearMenus();
+  }
+}
+
+// -->
+</script>
+<table style="width: 100%; border: 0px"><tr><td style="border: 0px; text-align: center"><br /><div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2079470915748165"
+     data-ad-slot="7499348273"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</td></tr></table>
+<table style="width: 100%; border: 2px groove silver; background-color: #f6edc8">
+<tr>
+  <td class="Introduction1" style="text-align: center; border: 0px; width: 100%"><h1>Search Distributions</h1></td>
+</tr>
+</table>
+<table class="Logo" style="width: 100%">
+  <tr>
+    <td style="width: 75%; vertical-align: top; border: none">
+      <table class="News">
+        <tr>
+          <th class="Invert">Search Distributions</th>
+        </tr>
+        <tr>
+          <td class="News1">
+            <table style="width: 100%">
+              <tr class="News">
+                <td class="NewsHeadline"><a id="pkgnote"></a>Important Note</td>
+              </tr>
+              <tr>
+              <td>
+          <br />Please note that we have put together a series of common search results for people looking for distributions that <a href="search.php?ostype=All&category=Beginners">are beginner friendly</a>, <a href="search.php?pkg=shim&relation=lessequal&pkgver=16&distrorange=InAny">support Secure Boot</a>, <a href="search.php?ostype=All&category=All&origin=All&basedon=All&notbasedon=None&desktop=All&architecture=All&package=All&rolling=All&isosize=All&netinstall=All&language=All&defaultinit=Not+systemd&status=Active#simple">do not use systemd</a>, or <a href="search.php?ostype=All&category=Raspberry+Pi">have a Raspberry Pi edition</a>. Clicking any of the above links will take you immediately to the appropriate search results.<br /><br />
+           For more flexible search options and filters, please visit our <a href="#advanced">Advanced Search</a> section. 
+<br /><br />
+           If you are looking for an article, tutorial or feature, please use our
+<a href="dwres.php?resource=article-search">Article Search</a> page.<br><br>
+              </td>
+              </tr>
+              <tr class="News">
+                <td class="NewsHeadline"><a id="pkgsearch"></a>Package search</td>
+              </tr>
+              <tr>
+                <td class="NewsText"><div style="float:right; margin-right: 2px; margin-left: 36px; margin-top: 2px;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- dw-medium-ad-ca -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7977636195244113"
+     data-ad-slot="1222631699"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div><br />Search the DistroWatch database for distributions using a particular package. If you are looking for a distribution with the latest <b>kernel</b>, select "linux" from the drop-down box below and type the version number into the text box next to it. Please note that the best way to obtain the <b>GNOME</b> version is by searching for "nautilus", while <b>KDE Plasma</b> is represented by the "plasma-desktop" package. <b>Apache</b> 2.x is listed as "httpd". As for versioning, if no version number is provided, this page will return any recent versions of the selected package. It is also possible to perform searches for distributions which do not contain a specific package. This returns a list of distributions where the given package is not present on the installation media.<br /><br />
+                The package version search offers the ability to search for packages which are close
+to a specific version, exactly equal to a specific version, greater than or less than
+a given version. The second field in the search form allows visitors to switch between
+these relations. Most people will probably want to use the <b>like</b> option as it will
+search for packages close to a given version. When no version is specified, <b>like</b>
+finds packages close to the latest version.<br /><br /> 
+
+This page can be used to display all distributions which contain a specific package
+or version of a package. We also have search pages which display a 
+<a href="dwres.php?resource=compare-packages">side-by-side</a> comparison of all packages
+between two distributions. We also provide a package which shows the <a href="dwres.php?resource=package-in-distro">version of a selected
+package</a> in all active distributions.
+<br /><br />
+Have fun and let us know how we can improve the search engine!<br /><br /><br />
+                <form action="search.php#pkgsearch">
+                Package:
+                <select name="pkg">
+                <option value="abiword">abiword (latest: 3.0.7)</option>
+<option value="alsa-lib">alsa-lib (latest: 1.2.15.1)</option>
+<option value="amdgpu">amdgpu (latest: 25.0.0)</option>
+<option value="apache-tomcat">apache-tomcat (latest: 11.0.15)</option>
+<option value="apparmor">apparmor (latest: 4.1.3)</option>
+<option value="apt">apt (latest: 3.1.13)</option>
+<option value="audacity">audacity (latest: 3.7.7)</option>
+<option value="autoconf">autoconf (latest: 2.72)</option>
+<option value="automake">automake (latest: 1.18.1)</option>
+<option value="avidemux">avidemux (latest: 2.8.1)</option>
+<option value="awesome">awesome (latest: 4.3)</option>
+<option value="bash">bash (latest: 5.3)</option>
+<option value="bind">bind (latest: 9.20.17)</option>
+<option value="binutils">binutils (latest: 2.45.1)</option>
+<option value="bison">bison (latest: 3.8.2)</option>
+<option value="blender">blender (latest: 5.0.1)</option>
+<option value="btrfs-progs">btrfs-progs (latest: 6.17.1)</option>
+<option value="budgie-desktop">budgie-desktop (latest: 10.9.4)</option>
+<option value="busybox">busybox (latest: 1.36.1)</option>
+<option value="bzip2">bzip2 (latest: 1.0.8)</option>
+<option value="calibre">calibre (latest: 8.16.2)</option>
+<option value="calligra">calligra (latest: 25.12.1)</option>
+<option value="chromium">chromium (latest: 143.0.7499.192)</option>
+<option value="cinnamon">cinnamon (latest: 6.6.4)</option>
+<option value="clamav">clamav (latest: 1.5.1)</option>
+<option value="cmake">cmake (latest: 4.2.1)</option>
+<option value="coreutils">coreutils (latest: 9.9)</option>
+<option value="cryptsetup">cryptsetup (latest: 2.8.3)</option>
+<option value="cups">cups (latest: 2.4.16)</option>
+<option value="curl">curl (latest: 8.18.0)</option>
+<option value="deluge">deluge (latest: 2.2.0)</option>
+<option value="devede">devede (latest: 4.21.0)</option>
+<option value="diffutils">diffutils (latest: 3.12)</option>
+<option value="digikam">digikam (latest: 8.8.0)</option>
+<option value="dillo">dillo (latest: 3.2.0)</option>
+<option value="dnf">dnf (latest: 5.3.0.0)</option>
+<option value="docker">docker (latest: 29.1.3)</option>
+<option value="dosbox">dosbox (latest: 0.74-3)</option>
+<option value="dovecot">dovecot (latest: 2.4.2)</option>
+<option value="doxygen">doxygen (latest: 1.16.0)</option>
+<option value="dracut">dracut (latest: 109)</option>
+<option value="e2fsprogs">e2fsprogs (latest: 1.47.3)</option>
+<option value="eclipse">eclipse (latest: 4.38)</option>
+<option value="efibootmgr">efibootmgr (latest: 18)</option>
+<option value="emacs">emacs (latest: 30.2)</option>
+<option value="enlightenment">enlightenment (latest: 0.27.1)</option>
+<option value="evolution">evolution (latest: 3.58.2)</option>
+<option value="exim">exim (latest: 4.99.1)</option>
+<option value="ffmpeg">ffmpeg (latest: 8.0.1)</option>
+<option value="file">file (latest: 5.46)</option>
+<option value="findutils">findutils (latest: 4.10.0)</option>
+<option value="firebird">firebird (latest: 5.0.3)</option>
+<option value="firefox">firefox (latest: 146.0.1)</option>
+<option value="firejail">firejail (latest: 0.9.78)</option>
+<option value="flatpak">flatpak (latest: 1.16.2)</option>
+<option value="flex">flex (latest: 2.6.4)</option>
+<option value="fluxbox">fluxbox (latest: 1.3.7)</option>
+<option value="freecad">freecad (latest: 1.0.2)</option>
+<option value="freetype">freetype (latest: 2.14.1)</option>
+<option value="gawk">gawk (latest: 5.3.2)</option>
+<option value="gcc">gcc (latest: 15.2.0)</option>
+<option value="gettext">gettext (latest: 0.26)</option>
+<option value="ghostscript">ghostscript (latest: 10.06.0)</option>
+<option value="gimp">gimp (latest: 3.0.6)</option>
+<option value="git">git (latest: 2.52.0)</option>
+<option value="glade">glade (latest: 3.40.0)</option>
+<option value="glibc">glibc (latest: 2.42)</option>
+<option value="gnome-shell">gnome-shell (latest: 49.2)</option>
+<option value="gnucash">gnucash (latest: 5.14)</option>
+<option value="gnumeric">gnumeric (latest: 1.12.59)</option>
+<option value="gnupg">gnupg (latest: 2.4.9)</option>
+<option value="gparted">gparted (latest: 1.7.0)</option>
+<option value="grep">grep (latest: 3.12)</option>
+<option value="groff">groff (latest: 1.23.0)</option>
+<option value="grub">grub (latest: 2.12)</option>
+<option value="gstreamer">gstreamer (latest: 1.26.10)</option>
+<option value="gtk">gtk (latest: 4.20.3)</option>
+<option value="gzip">gzip (latest: 1.14)</option>
+<option value="hplip">hplip (latest: 3.25.8)</option>
+<option value="httpd">httpd (latest: 2.4.66)</option>
+<option value="hyprland">hyprland (latest: 0.53.1)</option>
+<option value="ibus">ibus (latest: 1.5.33)</option>
+<option value="icewm">icewm (latest: 4.0.0)</option>
+<option value="ImageMagick">ImageMagick (latest: 7.1.2-12)</option>
+<option value="inkscape">inkscape (latest: 1.4.3)</option>
+<option value="iptables">iptables (latest: 1.8.11)</option>
+<option value="jwm">jwm (latest: 2.4.6)</option>
+<option value="k3b">k3b (latest: 25.12.1)</option>
+<option value="kdevelop">kdevelop (latest: 25.12.1)</option>
+<option value="kmod">kmod (latest: 34.2)</option>
+<option value="kodi">kodi (latest: 21.3)</option>
+<option value="krita">krita (latest: 5.2.14)</option>
+<option value="krusader">krusader (latest: 2.9.0)</option>
+<option value="ktorrent">ktorrent (latest: 25.12.1)</option>
+<option value="less">less (latest: 685)</option>
+<option value="lftp">lftp (latest: 4.9.3)</option>
+<option value="libdvdcss">libdvdcss (latest: 1.5.0)</option>
+<option value="LibreOffice">LibreOffice (latest: 25.8.4)</option>
+<option value="libressl">libressl (latest: 4.2.1)</option>
+<option value="libselinux">libselinux (latest: 3.9)</option>
+<option value="libtool">libtool (latest: 2.6.0)</option>
+<option value="libvirt">libvirt (latest: 11.10.0)</option>
+<option value="libvorbis">libvorbis (latest: 1.3.7)</option>
+<option value="lighttpd">lighttpd (latest: 1.4.82)</option>
+<option value="lilo">lilo (latest: 24.2)</option>
+<option value="links">links (latest: 2.30)</option>
+<option value="linux">linux (latest: 6.18.4)</option>
+<option value="llvm">llvm (latest: 21.1.8)</option>
+<option value="lua">lua (latest: 5.5.0)</option>
+<option value="lvm">lvm (latest: 2.03.38)</option>
+<option value="lxpanel">lxpanel (latest: 0.11.1)</option>
+<option value="lxqt-panel">lxqt-panel (latest: 2.3.2)</option>
+<option value="lynx">lynx (latest: 2.9.2)</option>
+<option value="lyx">lyx (latest: 2.4.4)</option>
+<option value="lzip">lzip (latest: 1.25)</option>
+<option value="m4">m4 (latest: 1.4.20)</option>
+<option value="make">make (latest: 4.4.1)</option>
+<option value="man-db">man-db (latest: 2.13.1)</option>
+<option value="man-pages">man-pages (latest: 6.16)</option>
+<option value="mariadb">mariadb (latest: 12.1.2)</option>
+<option value="mate-desktop">mate-desktop (latest: 1.28.2)</option>
+<option value="mc">mc (latest: 4.8.33)</option>
+<option value="mesa">mesa (latest: 25.3.3)</option>
+<option value="midori">midori (latest: 11.6)</option>
+<option value="mod_perl">mod_perl (latest: 2.0.13)</option>
+<option value="mpv">mpv (latest: 0.41.0)</option>
+<option value="mutt">mutt (latest: 2.2.16)</option>
+<option value="mypaint">mypaint (latest: 2.0.1)</option>
+<option value="mysql">mysql (latest: 9.5.0)</option>
+<option value="mythtv">mythtv (latest: 35.0)</option>
+<option value="nano">nano (latest: 8.7)</option>
+<option value="nautilus">nautilus (latest: 49.3)</option>
+<option value="ncurses">ncurses (latest: 6.6)</option>
+<option value="netbeans">netbeans (latest: 28)</option>
+<option value="NetworkManager">NetworkManager (latest: 1.54.3)</option>
+<option value="nftables">nftables (latest: 1.1.6)</option>
+<option value="nginx">nginx (latest: 1.28.1)</option>
+<option value="nmap">nmap (latest: 7.98)</option>
+<option value="ntfs-3g">ntfs-3g (latest: 2022.10.3)</option>
+<option value="nuspell">nuspell (latest: 5.1.7)</option>
+<option value="NVIDIA">NVIDIA (latest: 590.48.01)</option>
+<option value="obs-studio">obs-studio (latest: 32.0.4)</option>
+<option value="octave">octave (latest: 10.3.0)</option>
+<option value="openbox">openbox (latest: 3.6.1)</option>
+<option value="openjdk">openjdk (latest: 25)</option>
+<option value="openldap">openldap (latest: 2.6.10)</option>
+<option value="openshot">openshot (latest: 3.4.0)</option>
+<option value="openssh">openssh (latest: 10.2p1)</option>
+<option value="openssl">openssl (latest: 3.6.0)</option>
+<option value="openvpn">openvpn (latest: 2.6.17)</option>
+<option value="opera">opera (latest: 125.0.5729.49)</option>
+<option value="pacman">pacman (latest: 7.1.0)</option>
+<option value="parted">parted (latest: 3.6)</option>
+<option value="pcmanfm">pcmanfm (latest: 1.4.0)</option>
+<option value="perl">perl (latest: 5.42.0)</option>
+<option value="php">php (latest: 8.5.1)</option>
+<option value="phpMyAdmin">phpMyAdmin (latest: 5.2.3)</option>
+<option value="pidgin">pidgin (latest: 2.14.14)</option>
+<option value="pipewire">pipewire (latest: 1.4.9)</option>
+<option value="pitivi">pitivi (latest: 2023.03)</option>
+<option value="plasma-desktop">plasma-desktop (latest: 6.5.4)</option>
+<option value="podman">podman (latest: 5.7.1)</option>
+<option value="postfix">postfix (latest: 3.10.7)</option>
+<option value="postgresql">postgresql (latest: 18.1)</option>
+<option value="ppp">ppp (latest: 2.5.2)</option>
+<option value="privoxy">privoxy (latest: 4.1.0)</option>
+<option value="pulseaudio">pulseaudio (latest: 17.0)</option>
+<option value="Python">Python (latest: 3.14.2)</option>
+<option value="qbittorrent">qbittorrent (latest: 5.1.4)</option>
+<option value="qemu">qemu (latest: 10.2.0)</option>
+<option value="qt">qt (latest: 6.10.1)</option>
+<option value="qt-creator">qt-creator (latest: 18.0.1)</option>
+<option value="rpm">rpm (latest: 6.0.1)</option>
+<option value="rp-pppoe">rp-pppoe (latest: 4.0)</option>
+<option value="rsync">rsync (latest: 3.4.1)</option>
+<option value="ruby">ruby (latest: 4.0.0)</option>
+<option value="rust">rust (latest: 1.92.0)</option>
+<option value="samba">samba (latest: 4.23.4)</option>
+<option value="sane-backends">sane-backends (latest: 1.4.0)</option>
+<option value="screen">screen (latest: 5.0.1)</option>
+<option value="scribus">scribus (latest: 1.6.5)</option>
+<option value="seamonkey">seamonkey (latest: 2.53.23)</option>
+<option value="sed">sed (latest: 4.9)</option>
+<option value="sendmail">sendmail (latest: 8.18.2)</option>
+<option value="shim">shim (latest: 16.1)</option>
+<option value="shotcut">shotcut (latest: 25.12.31)</option>
+<option value="shotwell">shotwell (latest: 0.32.14)</option>
+<option value="snapd">snapd (latest: 2.73)</option>
+<option value="snort">snort (latest: 3.10.0.0)</option>
+<option value="SpamAssassin">SpamAssassin (latest: 4.0.2)</option>
+<option value="sqlite">sqlite (latest: 3.51.1)</option>
+<option value="squid">squid (latest: 7.3)</option>
+<option value="subversion">subversion (latest: 1.14.5)</option>
+<option value="sway">sway (latest: 1.11)</option>
+<option value="sylpheed">sylpheed (latest: 3.7.0)</option>
+<option value="synaptic">synaptic (latest: 0.91.7)</option>
+<option value="systemd">systemd (latest: 259)</option>
+<option value="sysvinit">sysvinit (latest: 3.14)</option>
+<option value="tar">tar (latest: 1.35)</option>
+<option value="tcl">tcl (latest: 9.0.3)</option>
+<option value="tcpdump">tcpdump (latest: 4.99.6)</option>
+<option value="texinfo">texinfo (latest: 7.2)</option>
+<option value="texlive">texlive (latest: 2025)</option>
+<option value="thunderbird">thunderbird (latest: 146.0.1)</option>
+<option value="tigervnc">tigervnc (latest: 1.15.0)</option>
+<option value="tmux">tmux (latest: 3.6a)</option>
+<option value="tor">tor (latest: 0.4.8.21)</option>
+<option value="transmission">transmission (latest: 4.0.6)</option>
+<option value="util-linux">util-linux (latest: 2.41.3)</option>
+<option value="vim">vim (latest: 9.1)</option>
+<option value="VirtualBox">VirtualBox (latest: 7.2.4)</option>
+<option value="vivaldi">vivaldi (latest: 7.7.3851.67)</option>
+<option value="vlc">vlc (latest: 3.0.23)</option>
+<option value="wayland">wayland (latest: 1.24.0)</option>
+<option value="webmin">webmin (latest: 2.610)</option>
+<option value="wget">wget (latest: 2.2.1)</option>
+<option value="WindowMaker">WindowMaker (latest: 0.96.0)</option>
+<option value="wine">wine (latest: 10.0)</option>
+<option value="wireshark">wireshark (latest: 4.6.2)</option>
+<option value="wordpress">wordpress (latest: 6.9)</option>
+<option value="xfdesktop">xfdesktop (latest: 4.20.1)</option>
+<option value="xfsprogs">xfsprogs (latest: 6.18.0)</option>
+<option value="xine-lib">xine-lib (latest: 1.2.13)</option>
+<option value="xorg-server">xorg-server (latest: 21.1.21)</option>
+<option value="xz">xz (latest: 5.8.2)</option>
+<option value="zfs">zfs (latest: 2.4.0)</option>
+<option value="zlib">zlib (latest: 1.3.1)</option>
+</select>&nbsp;&nbsp;<select name="relation">
+<option value="similar">like</option>
+<option value="equal">=</option>
+<option value="greater">&gt;</option>
+<option value="greaterequal">&gt;=</option>
+<option value="less">&lt;</option>
+<option value="lessequal">&lt;=</option>
+</select>
+&nbsp;&nbsp;Version: <input type="text" name="pkgver" value="" size="10" maxlength="20">&nbsp;&nbsp;<select name="distrorange"><option value="InLatest">In latest release</option><option value="InAny">In any releases</option><option value="NotInLatest">Not in latest release</option><option value="NotInAny">Not in some releases</option></select>
+&nbsp;&nbsp;<input type="submit" value="Submit Query"></form>                <br>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="News1">
+            <table style="width: 100%">
+              <tr class="News">
+                <td class="NewsHeadline" style="width: 100%"><a id="distrosearch"></a>Search by Distribution Criteria (Simple Search Form)</td>
+              </tr>
+              <tr>
+                <td class="NewsText" style="width: 100%">
+                <a id="simple"></a>
+<div style="float:left; margin-right: 16px; margin-left: 1px; margin-top: 1px; margin-bottom: 1px;"></div><br />This section allows you to search for a particular distribution based on certain criteria. Select the criteria from the drop-down and check boxes below and hit the Submit Query button to get a list of known distributions that match your choice.<br />
+                <blockquote>
+<form style="height: 20%" method="get" action="search.php#simpleresults">
+<table>
+<tr>
+<td style="border: none"><b>OS Type</b>&nbsp;</td>
+<td style="border: none"><select name="ostype">
+<option selected value="All">All</option>
+<option value="BSD">BSD</option>
+<option value="Linux">Linux</option>
+<option value="Solaris">Solaris</option>
+<option value="Other OS">Other OS</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Distribution category</b>&nbsp;</td>
+<td style="border: none"><select name="category">
+<option selected value="All">All</option>
+<option value="Assistive">Assistive</option>
+<option value="Beginners">Beginners</option>
+<option value="Clusters">Clusters</option>
+<option value="Container">Container</option>
+<option value="Data Rescue">Data Rescue</option>
+<option value="Declarative">Declarative</option>
+<option value="Desktop">Desktop</option>
+<option value="Disk Management">Disk Management</option>
+<option value="Education">Education</option>
+<option value="Firewall">Firewall</option>
+<option value="Forensics">Forensics</option>
+<option value="Free Software">Free Software</option>
+<option value="From RAM">From RAM</option>
+<option value="Gaming">Gaming</option>
+<option value="High Performance Computing">High Performance Computing</option>
+<option value="Immutable">Immutable</option>
+<option value="Kubernetes">Kubernetes</option>
+<option value="Live Medium">Live Medium</option>
+<option value="Mobile">Mobile</option>
+<option value="Multimedia">Multimedia</option>
+<option value="MythTV">MythTV</option>
+<option value="NAS">NAS</option>
+<option value="Netbooks">Netbooks</option>
+<option value="Old Computers">Old Computers</option>
+<option value="Privacy">Privacy</option>
+<option value="Raspberry Pi">Raspberry Pi</option>
+<option value="Scientific">Scientific</option>
+<option value="Server">Server</option>
+<option value="Security">Security</option>
+<option value="Source-based">Source-based</option>
+<option value="Specialist">Specialist</option>
+<option value="Telephony">Telephony</option>
+<option value="Thin Client">Thin Client</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Country of origin</b>&nbsp;</td>
+<td style="border: none"><select name="origin">
+<option selected value="All">All</option>
+<option value="Algeria">Algeria</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Belgium">Belgium</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Brazil">Brazil</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Canada">Canada</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Cuba">Cuba</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czechia">Czechia</option>
+<option value="Denmark">Denmark</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="Germany">Germany</option>
+<option value="Greece">Greece</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran">Iran</option>
+<option value="Ireland">Ireland</option>
+<option value="Isle of Man">Isle of Man</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Latvia">Latvia</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Malta">Malta</option>
+<option value="Mexico">Mexico</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Réunion">Réunion</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russia</option>
+<option value="Serbia">Serbia</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="South Africa">South Africa</option>
+<option value="South Korea">South Korea</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Thailand">Thailand</option>
+<option value="Turkey">Turkey</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="Uruguay">Uruguay</option>
+<option value="USA">USA</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Vietnam">Vietnam</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Based on</b>&nbsp;</td>
+<td style="border: none"><select name="basedon">
+<option value="All">All</option>
+<option value="Alpine">Alpine</option>
+<option value="ALT">ALT</option>
+<option value="Android">Android</option>
+<option selected value="Arch">Arch</option>
+<option value="Bodhi">Bodhi</option>
+<option value="CentOS">CentOS</option>
+<option value="CRUX">CRUX</option>
+<option value="Debian">Debian</option>
+<option value="Debian (Stable)">Debian (Stable)</option>
+<option value="Debian (Testing)">Debian (Testing)</option>
+<option value="Debian (Unstable)">Debian (Unstable)</option>
+<option value="Devuan">Devuan</option>
+<option value="Fedora">Fedora</option>
+<option value="FreeBSD">FreeBSD</option>
+<option value="Gentoo">Gentoo</option>
+<option value="Independent">Independent</option>
+<option value="KDE neon">KDE neon</option>
+<option value="KNOPPIX">KNOPPIX</option>
+<option value="LFS">LFS</option>
+<option value="LineageOS">LineageOS</option>
+<option value="Mageia">Mageia</option>
+<option value="Mandriva">Mandriva</option>
+<option value="Manjaro">Manjaro</option>
+<option value="Mint">Mint</option>
+<option value="NixOS">NixOS</option>
+<option value="OpenBSD">OpenBSD</option>
+<option value="OpenSolaris">OpenSolaris</option>
+<option value="openSUSE">openSUSE</option>
+<option value="PCLinuxOS">PCLinuxOS</option>
+<option value="Puppy">Puppy</option>
+<option value="Red Hat">Red Hat</option>
+<option value="sidux">sidux</option>
+<option value="Slackware">Slackware</option>
+<option value="SliTaz">SliTaz</option>
+<option value="Solaris">Solaris</option>
+<option value="Ubuntu">Ubuntu</option>
+<option value="Ubuntu (LTS)">Ubuntu (LTS)</option>
+<option value="Tiny Core">Tiny Core</option>
+<option value="Void">Void</option>
+<option value="Zenwalk">Zenwalk</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Not based on</b>&nbsp;</td>
+<td style="border: none"><select name="notbasedon">
+<option selected value="None">None</option>
+<option value="Arch">Arch</option>
+<option value="CentOS">CentOS</option>
+<option value="ChromeOS">ChromeOS</option>
+<option value="Debian">Debian</option>
+<option value="Fedora">Fedora</option>
+<option value="FreeBSD">FreeBSD</option>
+<option value="Gentoo">Gentoo</option>
+<option value="Independent">Independent</option>
+<option value="KDE neon">KDE neon</option>
+<option value="KNOPPIX">KNOPPIX</option>
+<option value="LFS">LFS</option>
+<option value="Mageia">Mageia</option>
+<option value="Mandriva">Mandriva</option>
+<option value="Manjaro">Manjaro</option>
+<option value="Mint">Mint</option>
+<option value="OpenBSD">OpenBSD</option>
+<option value="openSUSE">openSUSE</option>
+<option value="PCLinuxOS">PCLinuxOS</option>
+<option value="Puppy">Puppy</option>
+<option value="Red Hat">Red Hat</option>
+<option value="sidux">sidux</option>
+<option value="Slackware">Slackware</option>
+<option value="SliTaz">SliTaz</option>
+<option value="Solaris">Solaris</option>
+<option value="Ubuntu">Ubuntu</option>
+<option value="Tiny Core">Tiny Core</option>
+<option value="Zenwalk">Zenwalk</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Desktop interface</b>&nbsp;</td>
+<td style="border: none"><select name="desktop">
+<option selected value="All">All</option>
+<option value="No desktop">No desktop</option>
+<option value="AfterStep">AfterStep</option>
+<option value="Android">Android</option>
+<option value="Awesome">Awesome</option>
+<option value="Blackbox">Blackbox</option>
+<option value="bspwm">bspwm</option>
+<option value="Budgie">Budgie</option>
+<option value="Cinnamon">Cinnamon</option>
+<option value="ChromeOS">ChromeOS</option>
+<option value="Consort">Consort</option>
+<option value="COSMIC">COSMIC</option>
+<option value="Deepin">Deepin</option>
+<option value="dk">dk</option>
+<option value="DankMaterialShell">DankMaterialShell</option>
+<option value="dwm">dwm</option>
+<option value="Enlightenment">Enlightenment</option>
+<option value="Equinox">Equinox</option>
+<option value="Firefox">Firefox</option>
+<option value="Fluxbox">Fluxbox</option>
+<option value="flwm">flwm</option>
+<option value="FVWM">FVWM</option>
+<option value="Gershwin">Gershwin</option>
+<option value="GNOME">GNOME</option>
+<option value="GNOME Mobile">GNOME Mobile</option>
+<option value="Hackedbox">Hackedbox</option>
+<option value="herbstluftwm">herbstluftwm</option>
+<option value="Hyprland">Hyprland</option>
+<option value="i3">i3</option>
+<option value="IceWM">IceWM</option>
+<option value="ion">ion</option>
+<option value="JWM">JWM</option>
+<option value="KDE">KDE</option>
+<option value="KDE Plasma">KDE Plasma</option>
+<option value="Kodi">Kodi</option>
+<option value="labwc">labwc</option>
+<option value="LeftWM">LeftWM</option>
+<option value="Lesstif">Lesstif</option>
+<option value="Lomiri">Lomiri</option>
+<option value="Lumina">Lumina</option>
+<option value="LXDE">LXDE</option>
+<option value="LXQt">LXQt</option>
+<option value="Matchbox">Matchbox</option>
+<option value="MATE">MATE</option>
+<option value="Maynard">Maynard</option>
+<option value="Metacity">Metacity</option>
+<option value="Mezzo">Mezzo</option>
+<option value="Moblin">Moblin</option>
+<option value="Mokka">Mokka</option>
+<option value="Moksha">Moksha</option>
+<option value="NebiDE">NebiDE</option>
+<option value="Niri">Niri</option>
+<option value="Noctalia">Noctalia</option>
+<option value="Openbox">Openbox</option>
+<option value="Pantheon">Pantheon</option>
+<option value="Pearl">Pearl</option>
+<option value="pekwm">pekwm</option>
+<option value="Phosh">Phosh</option>
+<option value="PIXEL">PIXEL</option>
+<option value="Plasma Mobile">Plasma Mobile</option>
+<option value="Qtile">Qtile</option>
+<option value="Ratpoison">Ratpoison</option>
+<option value="Razor-qt">Razor-qt</option>
+<option value="River">River</option>
+<option value="SLWM">SLWM</option>
+<option value="Sugar">Sugar</option>
+<option value="Sway">Sway</option>
+<option value="Sxmo">Sxmo</option>
+<option value="Trinity">Trinity</option>
+<option value="TWM">TWM</option>
+<option value="UKUI">UKUI</option>
+<option value="Unity">Unity</option>
+<option value="Wayfire">Wayfire</option>
+<option value="WebUI">WebUI</option>
+<option value="WMaker">WMaker</option>
+<option value="WMFS">WMFS</option>
+<option value="WMI">WMI</option>
+<option value="Xfce">Xfce</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Architecture</b>&nbsp;</td>
+<td style="border: none"><select name="architecture">
+<option selected value="All">All</option>
+<option value="aarch64">aarch64</option>
+<option value="acorn26">acorn26</option>
+<option value="acorn32">acorn32</option>
+<option value="alpha">alpha</option>
+<option value="amiga">amiga</option>
+<option value="arc">arc</option>
+<option value="arm">arm</option>
+<option value="armv5tel">armv5tel</option>
+<option value="armel">armel</option>
+<option value="armhf">armhf</option>
+<option value="armv7">armv7</option>
+<option value="armv8">armv8</option>
+<option value="atari">atari</option>
+<option value="cats">cats</option>
+<option value="cobalt">cobalt</option>
+<option value="dreamcast">dreamcast</option>
+<option value="emips">emips</option>
+<option value="evbarm">evbarm</option>
+<option value="evbmips">evbmips</option>
+<option value="evbppc">evbppc</option>
+<option value="evbsh3">evbsh3</option>
+<option value="ews4800mips">ews4800mips</option>
+<option value="hp300">hp300</option>
+<option value="hp700">hp700</option>
+<option value="hpcarm">hpcarm</option>
+<option value="hpcmips">hpcmips</option>
+<option value="hpcsh">hpcsh</option>
+<option value="hppa">hppa</option>
+<option value="i386">i386</option>
+<option value="i486">i486</option>
+<option value="i586">i586</option>
+<option value="i686">i686</option>
+<option value="ia64">ia64</option>
+<option value="ibmnws">ibmnws</option>
+<option value="IBM Z">IBM Z</option>
+<option value="ix86">ix86</option>
+<option value="loongarch64">loongarch64</option>
+<option value="luna68k">luna68k</option>
+<option value="m68010">m68010</option>
+<option value="m68k">m68k</option>
+<option value="mips">mips</option>
+<option value="mipsco">mipsco</option>
+<option value="mipsel">mipsel</option>
+<option value="mvme68k">mvme68k</option>
+<option value="mvmeppc">mvmeppc</option>
+<option value="news68k">news68k</option>
+<option value="newsmips">newsmips</option>
+<option value="ns32k">ns32k</option>
+<option value="ofppc">ofppc</option>
+<option value="pmax">pmax</option>
+<option value="Power">Power</option>
+<option value="powerpc">powerpc</option>
+<option value="ppc64">ppc64</option>
+<option value="ppc64el">ppc64el</option>
+<option value="ppc64le">ppc64le</option>
+<option value="prep">prep</option>
+<option value="ps2">ps2</option>
+<option value="ps3">ps3</option>
+<option value="riscv">riscv</option>
+<option value="riscv64">riscv64</option>
+<option value="s390">s390</option>
+<option value="s390x">s390x</option>
+<option value="sandpoint">sandpoint</option>
+<option value="sgimips">sgimips</option>
+<option value="sh3eb">sh3eb</option>
+<option value="sh3el">sh3el</option>
+<option value="sh5">sh5</option>
+<option value="shark">shark</option>
+<option value="sparc32">sparc32</option>
+<option value="sparc64">sparc64</option>
+<option value="sun2">sun2</option>
+<option value="sun3">sun3</option>
+<option value="vax">vax</option>
+<option value="x68k">x68k</option>
+<option value="x86_64">x86_64</option>
+<option value="x86-64-v2">x86-64-v2</option>
+<option value="x86-64-v3">x86-64-v3</option>
+<option value="xbox">xbox</option>
+<option value="zaurus">zaurus</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Package management</b>&nbsp;</td>
+<td style="border: none"><select name="package">
+<option value="All">All</option>
+<option value="None/Unknown">None/Unknown</option>
+<option value="DEB">DEB</option>
+<option selected value="Flatpak">Flatpak</option>
+<option value="Luet">Luet</option>
+<option value="Nix/Guix">Nix/Guix</option>
+<option value="RPM">RPM</option>
+<option value="Pacman">Pacman</option>
+<option value="PET">PET</option>
+<option value="PiSi">PiSi</option>
+<option value="Portage">Portage</option>
+<option value="snap">snap</option>
+<option value="TGZ/TXZ">TGZ/TXZ</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Release model</b> (<a href="dwres.php?resource=faq#lts"><span class="TopLink">LTS defined</span></a>)&nbsp;</td>
+<td style="border: none"><select name="rolling">
+<option selected value="All">All</option>
+<option value="Fixed">Fixed</option>
+<option value="Fixed (LTS)">Fixed (LTS)</option>
+<option value="Semi-Rolling">Semi-Rolling</option>
+<option value="Rolling">Rolling</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Install media size</b>&nbsp;</td>
+<td style="border: none"><select name="isosize">
+<option selected value="All">All</option>
+<option value="Under 100MB">Under 100MB</option>
+<option value="Under 250MB">Under 250MB</option>
+<option value="Under 700MB">Under 700MB</option>
+<option value="Under 2000MB">Under 2000MB</option>
+<option value="Over 2000MB">Over 2000MB</option>
+<option value="Over 5000MB">Over 5000MB</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Install method</b>&nbsp;</td>
+<td style="border: none"><select name="netinstall">
+<option selected value="All">All</option>
+<option value="Local">Local</option>
+<option value="Net-Install">Net-Install</option>
+<option value="OEM">OEM</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Multi-language support</b>&nbsp;</td>
+<td style="border: none"><select name="language">
+<option selected value="All">All</option
+>
+<option value="Yes/Other">Yes/Other</option>
+<option value="No">No</option>
+<option value="ar">ar</option>
+<option value="arabic">arabic</option>
+<option value="aragonese">aragonese</option>
+<option value="az">az</option>
+<option value="Bengali">Bengali</option>
+<option value="bg">bg</option>
+<option value="bn">bn</option>
+<option value="by">by</option>
+<option value="ca">ca</option>
+<option value="catalan">catalan</option>
+<option value="cn">cn</option>
+<option value="cs">cs</option>
+<option value="cz">cz</option>
+<option value="da">da</option>
+<option value="de">de</option>
+<option value="dk">dk</option>
+<option value="Dzongkha">Dzongkha</option>
+<option value="ee">ee</option>
+<option value="en">en</option>
+<option value="es">es</option>
+<option value="et">et</option>
+<option value="eu">eu</option>
+<option value="fa">fa</option>
+<option value="Farsi">Farsi</option>
+<option value="fi">fi</option>
+<option value="fo">fo</option>
+<option value="fr">fr</option>
+<option value="galician">galician</option>
+<option value="gl">gl</option>
+<option value="gr">gr</option>
+<option value="Gujarati">Gujarati</option>
+<option value="Hausa">Hausa</option>
+<option value="he">he</option>
+<option value="hi">hi</option>
+<option value="Hindi">Hindi</option>
+<option value="hk">hk</option>
+<option value="hr">hr</option>
+<option value="hu">hu</option>
+<option value="id">id</option>
+<option value="Igbo">Igbo</option>
+<option value="il">il</option>
+<option value="in">in</option>
+<option value="is">is</option>
+<option value="ISO">ISO</option>
+<option value="it">it</option>
+<option value="ja">ja</option>
+<option value="jp">jp</option>
+<option value="ko">ko</option>
+<option value="kr">kr</option>
+<option value="lt">lt</option>
+<option value="lv">lv</option>
+<option value="Malayalam">Malayalam</option>
+<option value="ml">ml</option>
+<option value="mn">mn</option>
+<option value="mr">mr</option>
+<option value="ms">ms</option>
+<option value="nb">nb</option>
+<option value="Nepali">Nepali</option>
+<option value="nl">nl</option>
+<option value="nn">nn</option>
+<option value="no">no</option>
+<option value="ph">ph</option>
+<option value="pl">pl</option>
+<option value="po">po</option>
+<option value="pt">pt</option>
+<option value="pt_br">pt_br</option>
+<option value="Punjabi">Punjabi</option>
+<option value="ro">ro</option>
+<option value="rs">rs</option>
+<option value="ru">ru</option>
+<option value="se">se</option>
+<option value="si">si</option>
+<option value="sk">sk</option>
+<option value="sv">sv</option>
+<option value="Tamil">Tamil</option>
+<option value="te">te</option>
+<option value="Telugu">Telugu</option>
+<option value="th">th</option>
+<option value="tr">tr</option>
+<option value="tw">tw</option>
+<option value="ua">ua</option>
+<option value="uk">uk</option>
+<option value="valencian">valencian</option>
+<option value="vn">vn</option>
+<option value="Yoruba">Yoruba</option>
+<option value="yu">yu</option>
+<option value="zh">zh</option>
+<option value="zh_CN">zh_CN</option>
+<option value="zh_TW">zh_TW</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Init software</b>&nbsp;</td>
+<td style="border: none"><select name="defaultinit">
+<option selected value="All">All</option
+>
+<option value="Dinit">Dinit</option>
+<option value="OpenRC">OpenRC</option>
+<option value="RC">RC</option>
+<option value="runit">runit</option>
+<option value="s6">s6</option>
+<option value="Shepherd">Shepherd</option>
+<option value="Suite66">Suite66</option>
+<option value="systemd">systemd</option>
+<option value="SysV">SysV</option>
+<option value="Upstart">Upstart</option>
+<option value="Not systemd">Not systemd</option>
+<option value="Other">Other</option>
+</select></td></tr>
+<tr>
+<td style="border: none"><b>Status</b>&nbsp; (<a href="dwres.php?resource=faq#distrostatus">defined</a>) </td>
+<td style="border: none"><select name="status">
+<option value="All">All</option>
+<option selected value="Active">Active</option>
+<option value="Dormant">Dormant</option>
+<option value="Discontinued">Discontinued</option>
+</select></td></tr>
+<tr>
+<td colspan="2" style="border: none"><br><div><input type="submit" value="Submit Query"></div></td>
+</table><br>
+</form><br><br>
+</blockquote>
+<b>The following distributions match your criteria (sorted by <a href="dwres.php?resource=popularity">popularity</a>):</b><br><br>
+<br><a id="simpleresults"></a><b>1. <a href="cachyos">CachyOS</a> (1)</b><br>CachyOS is a Linux distribution based on Arch Linux. It focuses on speed and security optimisations - the default Linux kernel is heavily optimised using the BORE (Burst-Oriented Response Enhancer) scheduler, while the desktop packages are compiled with LTO, x86-64-v3 and x86-64-v4, Zen 4 optimization, security flags and performance improvements. The available desktop environments, window managers and Wayland compositors include bspwm, Budgie, Cinnamon, COSMIC, GNOME, Hyprland, i3, KDE Plasma, LXDE, LXQt, MATE, Niri, Openbox, Qtile, Sway, UKUI, Wayfire and Xfce. CachyOS also ships with both graphical and command-line system installers.<br><br><b>2. <a href="manjaro">Manjaro Linux</a> (8)</b><br>Manjaro Linux is a fast, user-friendly, desktop-oriented operating system based on Arch Linux. Key features include intuitive installation process, automatic hardware detection, stable rolling-release model, ability to install multiple kernels, special Bash scripts for managing graphics drivers and extensive desktop configurability. Manjaro Linux offers Xfce as the core desktop options, as well as KDE, GNOME and a minimalist Net edition for more advanced users. Community-supported desktop flavours are also available. <br><br><b>3. <a href="bluestar">Bluestar Linux</a> (14)</b><br>Bluestar Linux is a GNU/Linux distribution that is based on Arch Linux. The Bluestar distribution features up to date packages, a full range of desktop and multimedia software in the default installation and a live desktop DVD.<br><br><b>4. <a href="blendos">blendOS</a> (68)</b><br>blendOS is an Arch Linux-based, rolling-release distribution which automates installing software from supported distributions (Arch Linux, Fedora and Ubuntu) into containers. blendOS tries to make software management in across containers feel native and provides access to the user's home directory for each container.<br><br><b>5. <a href="ultimate">Ultimate Edition</a> (78)</b><br>Ultimate Edition, first released in December 2006, was a fork of Ubuntu and Linux Mint though recent versions (starting in 2024) have been based on Arch Linux. The goal of the project is to create a complete, seamlessly integrated, visually stimulating, and easy-to-install operating system. Single-button upgrade is one of several special characteristics of this distribution. Other main features include custom desktop and theme with 3D effects, support for a wide range of networking options, including WiFi and Bluetooth, and integration of many extra applications and package repositories.<br><br><b>6. <a href="linuxhub">LinuxHub Prime</a> (115)</b><br>LinuxHub Prime is an Arch-based Linux distribution with a customised Openbox window manager as the default desktop environment. Its main feature is a unique installer that provides one-click installation options for several popular window managers and desktop environments, including Awesome, bspwm, Budgie, Cinnamon, Deepin, GNOME, Hyprland, KDE Plasma, MATE, Qtile and Xfce. The installer also includes "Prime Builder", a tool for creating a custom respin of the distribution.<br><br><b>7. <a href="rebornos">RebornOS</a> (120)</b><br>RebornOS is a desktop-oriented Linux distribution based on Arch Linux. Although the RebornOS live image provides one desktop only, the installation process offers a choice to install one of the many popular desktop environments and window managers. Other interesting features of the distribution include support for Flatpak packages, optional installation of Anbox for running Android applications, a capability to rollback the system to a previous date, and graphical system configuration and maintenance tools.<br><br><b>8. <a href="stormos">StormOS</a> (121)</b><br>StormOS is a desktop-oriented Linux distribution based on Arch Linux. The project's goal is to build an operating system which is easy-to-install, beginner-friendly and usable out of the box in order to attract new users over to the world of Arch Linux.<br><br><b>9. <a href="sdesk">SDesk</a> (126)</b><br>SDesk is an Arch-based Linux distribution which strives for an easy to use, modern approach to desktop computing. The SDesk project ships up to date software and uses GNOME running on a Wayland session for its default desktop environment. SDesk includes a number of popular open source applications, including LibreOffice and uses Calamares to install the operating system.<br><br><b>10. <a href="shanios">Shanios</a> (130)</b><br>Shanios is an immutable desktop Linux distribution based on Arch Linux. It provides optimised builds of the GNOME and KDE Plasma desktop environments. Like most immutable Linux systems, Shanios features rollbacks for instant system recovery, atomic updates through a custom deployment tool called shani-deploy, and Flatpak integration. The distribution's other main features include a blue-green deployment strategy using Btrfs subvolumes, preservation of system integrity with a read-only root partition, and enhanced security through AppArmor profiles, firewalld configurations, and full-disk encryption.<br><br><b>11. <a href="xray">Xray_OS</a> (154)</b><br>Xray_OS is an Arch-based Linux distribution focused on innovation, creativity, usability and software development. It comes with KDE Plasma as its preferred desktop. Some of the other interesting features of the distribution include a custom system installer, a welcome application called Tolitica with some useful options, smart GPU detection which removes unused drivers during installation, an AUR helper for downloading and building software packages on the fly, and original wallpapers created specifically for Xray_OS.<br><br><b>12. <a href="arkane">Arkane Linux</a> (155)</b><br>Arkane Linux is an immutable, atomic, Arch-based distribution which aims to provide a GNOME-centered experienced with minimal, yet full-featured and non-intrusive defaults. It provides a stock GNOME Shell bundled exclusively with core applications required to offer a minimal GNOME desktop experience. Arkane Linux serves primarily as a reference implementation, development environment, and as the developer's personal configuration tool to aid with work on the project's immutable system management toolkit called "Arkdep".<br><br><b>13. <a href="nyarch">Nyarch Linux</a> (160)</b><br>Nyarch Linux is an Arch-based, rolling-release Linux distribution designed for "weebs", or non-Japanese persons interested in anime, manga, cosplay and other aspects of the Japanese culture. Some of the distribution's custom features include "Catgirl Downloader" which downloads random pictures of cute catgirls, "Nyarch Assistant", a digital companion which helps with a range of computing and real-life tasks, "Material UwU" which serves as a desktop wallpaper and theme chooser, and "Nyarch Customize", a tool to facilitate desktop layout customisations and animations. Besides the standard release, the project also provides a special variant with pre-configured proprietary NVIDIA display drivers; both come with the GNOME desktop.<br><br><b>14. <a href="shebang">Shebang</a> (189)</b><br>Shebang is a lightweight Artix-based Linux distribution with focus on simplicity, privacy and security. It uses a customised Openbox window manager suitable for both intermediate and advanced power users. Shebang is an attempt at building a modern, full-featured GNU/Linux system without sacrificing usability and performance.<br><br><b>15. <a href="tealinux">TeaLinux</a> (214)</b><br>TeaLinux is an Indonesian Linux distribution based on Arch Linux. It is developed by Dinus Open Source Community (DOSCOM) from Dian Nuswantoro University in Semarang, Central Java. It was started in 2009 (when the distribution was based on Ubuntu). TeaLinux, which is available in COSMIC and KDE Plasma desktop variants, includes a custom system installer called "Tea-Install". The distribution is crafted with a strong focus on programming and development needs and with a clean and efficient environment for developers.<br><br><b>16. <a href="calam">Calam Arch Installer</a> (217)</b><br>Calam Arch Installer is an Arch-based Linux distribution created to facilitate the installation of an Arch Linux system to a hard disk. It is also a full-featured live Linux system with Xfce as the preferred desktop. The Calamares system installer offers a choice of several popular desktop environments and window managers, including Budgie, Cinnamon, Deepin, GNOME, i3, KDE Plasma, MATE, Openbox and Xfce. The distribution also offers support for both BIOS and UEFI boot, as well as hard disk encryption with LUKS.<br><br><b>17. <a href="parch">Parch GNU/Linux</a> (220)</b><br>Parch GNU/Linux is an Arch-based, rolling-release Linux distribution for standard desktops as well as some ARM-based devices. Its goal is to provide a streamlined and user-friendly experience while maintaining the customisability and performance of Arch Linux. The distribution offers a choice of GNOME, KDE Plasma and Xfce desktops, the Calamares graphical installer, optimised Persian fonts for enhanced readability and aesthetics, and extensive documentation and community support.<br><br><b>18. <a href="acreetionos">AcreetionOS</a> (243)</b><br>AcreetionOS is an Arch-based, desktop-oriented Linux distribution that aims to be user-friendly, approachable and stable. It has a policy of holding back new packages for a week of testing to provide a buffer against potential upstream issues. It uses the popular Calamares installer with sensible defaults to get a working system up and running quickly. The preferred desktop environment of AcreetionOS is Cinnamon, but an alternative image with the GNOME desktop is also available.<br><br><b>19. <a href="pearos">pearOS</a> (247)</b><br>pearOS is an Arch-based desktop Linux distribution which features a macOS-like theme and icons on top of the KDE Plasma desktop. Some of the distribution's features include a custom system installer called pearOS Installer, a pearOS welcome application, and the GNOME Files file manager. pearOS comes with various popular desktop, web and multimedia applications, such as the Gwenview image viewer, Firefox web browser, Elisa music player and Kate text editor.<br><br><b>20. <a href="steamos">SteamOS</a> (265)</b><br>SteamOS is an Arch-based Linux distribution developed by Valve Corporation, a US video game developer, publisher and digital distribution company. It comes with Steam, Valve's own video game store, and it is the default Linux distribution for Valve's line of gaming hardware, including the Steam Deck, Steam Machine and Steam Frame. The distribution also supports some third-party handheld devices, such as Lenovo Legion Go and ASUS ROG Ally, but it can also be installed on standard personal computers. SteamOS uses the KDE Plasma desktop as its default user interface.<br><br><b>21. <a href="melawy">Melawy Linux</a> (279)</b><br>Melawy Linux is an Arch-based desktop Linux distribution featuring a customised KDE Plasma as the preferred desktop. It uses the alternative XanMod Linux kernel designed for improved performance and responsiveness. Some of the distribution's features include the Calamares installer, a custom-designed rEFInd boot manager, a Plymouth boot screen, and the Simple Desktop Display Manager (SDDM) desktop login manager. Melawy Linux is available in "Base" and "Developer" editions.<br><br><b>22. <a href="vincent">Vincent OS</a> (310)</b><br>Vincent OS is Arch-based desktop Linux distribution with KDE Plasma as the preferred desktop. It comes with "Core LivePatch", an in-house patch system with an ability of applying critical and security updates without the need to reboot the computer. Some of the other interesting features and applications of Vincent OS are Microsoft PowerShell (with Bash compatibility), pre-installed Wine for running some Windows programs, out-of-the-box support for Flatpak packages, and the ClamAV toolkit for detecting malware and viruses.<br><br><b>23. <a href="stratos">StratOS Linux</a> (350)</b><br>StratOS Linux is an Arch-based Linux distribution which uses scripts from Bedrock Linux to include various packages and repositories from other Linux distributions. It provides several desktop variants featuring the GNOME desktop as well as the Hyprland and the Niri Wayland compositors. The project also develops several custom tools, such as StratVIM (a fork of the Neovim text editor), Rockers (a custom package manager wrapper able to fetch and install binary and source packages from other Linux distributions and from Flatpaks), Stratmacs (a custom Emacs configuration), grab (a fetch script), and Maneki-Neko (a Welcome application).<br><br><b>24. <a href="ublinux">UBLinux</a> (354)</b><br>UBLinux is an Arch-based Linux distribution developed by Russia's Yubitex. It provides four editions. The freely-downloadable "Basic Desktop" edition is available for personal and non-commercial use, while "UBLinux Education", "UBLinux Desktop Enterprise" and "UBLinux Server" are commercial products. UBLinux "Basic Desktop" uses Xfce as the default desktop environment and includes various popular applications for Internet, office, multimedia and graphics tasks.<br><br><b>25. <a href="enos">EN-OS</a> (402)</b><br>EN-OS is an Arch Linux-based distribution with a customised KDE Plasma as the preferred desktop and a large range of KDE-centric software, including the Calligra office suite and KDE Gear set of applications. Designed for the desktop, it also includes the Calamares system installer and a good selection of popular applications for work, multimedia and development.<br><br>                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="News1">
+            <table style="width: 100%">
+              <tr class="News">
+                <td class="NewsHeadline">Search by Distribution Criteria (Advanced Search Form)</td>
+              </tr>
+              <tr>
+                <td class="NewsText"><a id="advanced"></a><br>The advanced search form allows you to fine tune your search criteria by including multiple items in your search. Once completed, it will also allow you to display the result either as a list of all matching distributions with their descriptions, or in a sorted tabular format.
+                <form style="height: 20%" method="post" action="search.php#advanced">
+<table>
+<tr>
+<td>
+<div><b>Operating System Type</b></div>
+<table style="width: 100%">
+<tr>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="ostype[]" value="All">All<br>
+<input type="checkbox" name="ostype[]" value="BSD">BSD<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="ostype[]" value="Linux">Linux<br>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="ostype[]" value="Solaris">Solaris<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="ostype[]" value="Other OS">Other OS<br>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<div><b>Distribution category</b></div>
+<table style="width: 100%">
+<tr>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="category[]" value="All">All<br>
+<input type="checkbox" name="category[]" value="Assistive">Assistive<br>
+<input type="checkbox" name="category[]" value="Beginners">Beginners<br>
+<input type="checkbox" name="category[]" value="Clusters">Clusters<br>
+<input type="checkbox" name="category[]" value="Container">Container<br>
+<input type="checkbox" name="category[]" value="Data Rescue">Data Rescue<br>
+<input type="checkbox" name="category[]" value="Declarative">Declarative<br>
+<input type="checkbox" name="category[]" value="Desktop">Desktop<br>
+<input type="checkbox" name="category[]" value="Disk Management">Disk Management<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="category[]" value="Education">Education<br>
+<input type="checkbox" name="category[]" value="Firewall">Firewall<br>
+<input type="checkbox" name="category[]" value="Forensics">Forensics<br>
+<input type="checkbox" name="category[]" value="Free Software">Free Software<br>
+<input type="checkbox" name="category[]" value="From RAM">From RAM<br>
+<input type="checkbox" name="category[]" value="Gaming">Gaming<br>
+<input type="checkbox" name="category[]" value="High Performance Computing">High Performance Computing<br>
+<input type="checkbox" name="category[]" value="Immutable">Immutable<br>
+<input type="checkbox" name="category[]" value="Kubernetes">Kubernetes<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="category[]" value="Live Medium">Live Medium<br>
+<input type="checkbox" name="category[]" value="Mobile">Mobile<br>
+<input type="checkbox" name="category[]" value="Multimedia">Multimedia<br>
+<input type="checkbox" name="category[]" value="MythTV">MythTV<br>
+<input type="checkbox" name="category[]" value="NAS">NAS<br>
+<input type="checkbox" name="category[]" value="Netbooks">Netbooks<br>
+<input type="checkbox" name="category[]" value="Old Computers">Old Computers<br>
+<input type="checkbox" name="category[]" value="Privacy">Privacy<br>
+<input type="checkbox" name="category[]" value="Raspberry Pi">Raspberry Pi<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="category[]" value="Scientific">Scientific<br>
+<input type="checkbox" name="category[]" value="Server">Server<br>
+<input type="checkbox" name="category[]" value="Security">Security<br>
+<input type="checkbox" name="category[]" value="Source-based">Source-based<br>
+<input type="checkbox" name="category[]" value="Specialist">Specialist<br>
+<input type="checkbox" name="category[]" value="Telephony">Telephony<br>
+<input type="checkbox" name="category[]" value="Thin Client">Thin Client<br>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<div><b>Country of origin</b></div>
+<table style="width: 100%">
+<tr>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="origin[]" value="All">All<br>
+<input type="checkbox" name="origin[]" value="Algeria">Algeria<br>
+<input type="checkbox" name="origin[]" value="Argentina">Argentina<br>
+<input type="checkbox" name="origin[]" value="Armenia">Armenia<br>
+<input type="checkbox" name="origin[]" value="Australia">Australia<br>
+<input type="checkbox" name="origin[]" value="Austria">Austria<br>
+<input type="checkbox" name="origin[]" value="Belgium">Belgium<br>
+<input type="checkbox" name="origin[]" value="Bhutan">Bhutan<br>
+<input type="checkbox" name="origin[]" value="Bosnia and Herzegovina">Bosnia and Herzegovina<br>
+<input type="checkbox" name="origin[]" value="Brazil">Brazil<br>
+<input type="checkbox" name="origin[]" value="Bulgaria">Bulgaria<br>
+<input type="checkbox" name="origin[]" value="Cambodia">Cambodia<br>
+<input type="checkbox" name="origin[]" value="Canada">Canada<br>
+<input type="checkbox" name="origin[]" value="Chile">Chile<br>
+<input type="checkbox" name="origin[]" value="China">China<br>
+<input type="checkbox" name="origin[]" value="Cuba">Cuba<br>
+<input type="checkbox" name="origin[]" value="Cyprus">Cyprus<br>
+<input type="checkbox" name="origin[]" value="Czechia">Czechia<br>
+<input type="checkbox" name="origin[]" value="Denmark">Denmark<br>
+<input type="checkbox" name="origin[]" value="Ecuador">Ecuador<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="origin[]" value="Egypt">Egypt<br>
+<input type="checkbox" name="origin[]" value="Finland">Finland<br>
+<input type="checkbox" name="origin[]" value="France">France<br>
+<input type="checkbox" name="origin[]" value="Germany">Germany<br>
+<input type="checkbox" name="origin[]" value="Greece">Greece<br>
+<input type="checkbox" name="origin[]" value="Guatemala">Guatemala<br>
+<input type="checkbox" name="origin[]" value="Hong Kong">Hong Kong<br>
+<input type="checkbox" name="origin[]" value="Hungary">Hungary<br>
+<input type="checkbox" name="origin[]" value="India">India<br>
+<input type="checkbox" name="origin[]" value="Indonesia">Indonesia<br>
+<input type="checkbox" name="origin[]" value="Iran">Iran<br>
+<input type="checkbox" name="origin[]" value="Ireland">Ireland<br>
+<input type="checkbox" name="origin[]" value="Isle of Man">Isle of Man<br>
+<input type="checkbox" name="origin[]" value="Israel">Israel<br>
+<input type="checkbox" name="origin[]" value="Italy">Italy<br>
+<input type="checkbox" name="origin[]" value="Japan">Japan<br>
+<input type="checkbox" name="origin[]" value="Jordan">Jordan<br>
+<input type="checkbox" name="origin[]" value="Latvia">Latvia<br>
+<input type="checkbox" name="origin[]" value="Lithuania">Lithuania<br>
+<input type="checkbox" name="origin[]" value="Malaysia">Malaysia<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="origin[]" value="Malta">Malta<br>
+<input type="checkbox" name="origin[]" value="Mexico">Mexico<br>
+<input type="checkbox" name="origin[]" value="Mongolia">Mongolia<br>
+<input type="checkbox" name="origin[]" value="Nepal">Nepal<br>
+<input type="checkbox" name="origin[]" value="Netherlands">Netherlands<br>
+<input type="checkbox" name="origin[]" value="New Zealand">New Zealand<br>
+<input type="checkbox" name="origin[]" value="Nigeria">Nigeria<br>
+<input type="checkbox" name="origin[]" value="Norway">Norway<br>
+<input type="checkbox" name="origin[]" value="Oman">Oman<br>
+<input type="checkbox" name="origin[]" value="Pakistan">Pakistan<br>
+<input type="checkbox" name="origin[]" value="Peru">Peru<br>
+<input type="checkbox" name="origin[]" value="Philippines">Philippines<br>
+<input type="checkbox" name="origin[]" value="Poland">Poland<br>
+<input type="checkbox" name="origin[]" value="Portugal">Portugal<br>
+<input type="checkbox" name="origin[]" value="Puerto Rico">Puerto Rico<br>
+<input type="checkbox" name="origin[]" value="Réunion">Réunion<br>
+<input type="checkbox" name="origin[]" value="Romania">Romania<br>
+<input type="checkbox" name="origin[]" value="Russia">Russia<br>
+<input type="checkbox" name="origin[]" value="Serbia">Serbia<br>
+<input type="checkbox" name="origin[]" value="Singapore">Singapore<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="origin[]" value="Slovakia">Slovakia<br>
+<input type="checkbox" name="origin[]" value="Slovenia">Slovenia<br>
+<input type="checkbox" name="origin[]" value="South Africa">South Africa<br>
+<input type="checkbox" name="origin[]" value="South Korea">South Korea<br>
+<input type="checkbox" name="origin[]" value="Spain">Spain<br>
+<input type="checkbox" name="origin[]" value="Sri Lanka">Sri Lanka<br>
+<input type="checkbox" name="origin[]" value="Sweden">Sweden<br>
+<input type="checkbox" name="origin[]" value="Switzerland">Switzerland<br>
+<input type="checkbox" name="origin[]" value="Taiwan">Taiwan<br>
+<input type="checkbox" name="origin[]" value="Thailand">Thailand<br>
+<input type="checkbox" name="origin[]" value="Turkey">Turkey<br>
+<input type="checkbox" name="origin[]" value="Ukraine">Ukraine<br>
+<input type="checkbox" name="origin[]" value="United Arab Emirates">United Arab Emirates<br>
+<input type="checkbox" name="origin[]" value="United Kingdom">United Kingdom<br>
+<input type="checkbox" name="origin[]" value="Uruguay">Uruguay<br>
+<input type="checkbox" name="origin[]" value="USA">USA<br>
+<input type="checkbox" name="origin[]" value="Venezuela">Venezuela<br>
+<input type="checkbox" name="origin[]" value="Vietnam">Vietnam<br>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<div><b>Based on</b></div>
+<table style="width: 100%">
+<tr>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="basedon[]" value="All">All<br>
+<input type="checkbox" name="basedon[]" value="Alpine">Alpine<br>
+<input type="checkbox" name="basedon[]" value="ALT">ALT<br>
+<input type="checkbox" name="basedon[]" value="Android">Android<br>
+<input type="checkbox" name="basedon[]" value="Arch">Arch<br>
+<input type="checkbox" name="basedon[]" value="Bodhi">Bodhi<br>
+<input type="checkbox" name="basedon[]" value="CentOS">CentOS<br>
+<input type="checkbox" name="basedon[]" value="CRUX">CRUX<br>
+<input type="checkbox" name="basedon[]" value="Debian">Debian<br>
+<input type="checkbox" name="basedon[]" value="Debian (Stable)">Debian (Stable)<br>
+<input type="checkbox" name="basedon[]" value="Debian (Testing)">Debian (Testing)<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="basedon[]" value="Debian (Unstable)">Debian (Unstable)<br>
+<input type="checkbox" name="basedon[]" value="Devuan">Devuan<br>
+<input type="checkbox" name="basedon[]" value="Fedora">Fedora<br>
+<input type="checkbox" name="basedon[]" value="FreeBSD">FreeBSD<br>
+<input type="checkbox" name="basedon[]" value="Gentoo">Gentoo<br>
+<input type="checkbox" name="basedon[]" value="Independent">Independent<br>
+<input type="checkbox" name="basedon[]" value="KDE neon">KDE neon<br>
+<input type="checkbox" name="basedon[]" value="KNOPPIX">KNOPPIX<br>
+<input type="checkbox" name="basedon[]" value="LFS">LFS<br>
+<input type="checkbox" name="basedon[]" value="LineageOS">LineageOS<br>
+<input type="checkbox" name="basedon[]" value="Mageia">Mageia<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="basedon[]" value="Mandriva">Mandriva<br>
+<input type="checkbox" name="basedon[]" value="Manjaro">Manjaro<br>
+<input type="checkbox" name="basedon[]" value="Mint">Mint<br>
+<input type="checkbox" name="basedon[]" value="NixOS">NixOS<br>
+<input type="checkbox" name="basedon[]" value="OpenBSD">OpenBSD<br>
+<input type="checkbox" name="basedon[]" value="OpenSolaris">OpenSolaris<br>
+<input type="checkbox" name="basedon[]" value="openSUSE">openSUSE<br>
+<input type="checkbox" name="basedon[]" value="PCLinuxOS">PCLinuxOS<br>
+<input type="checkbox" name="basedon[]" value="Puppy">Puppy<br>
+<input type="checkbox" name="basedon[]" value="Red Hat">Red Hat<br>
+<input type="checkbox" name="basedon[]" value="sidux">sidux<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="basedon[]" value="Slackware">Slackware<br>
+<input type="checkbox" name="basedon[]" value="SliTaz">SliTaz<br>
+<input type="checkbox" name="basedon[]" value="Solaris">Solaris<br>
+<input type="checkbox" name="basedon[]" value="Ubuntu">Ubuntu<br>
+<input type="checkbox" name="basedon[]" value="Ubuntu (LTS)">Ubuntu (LTS)<br>
+<input type="checkbox" name="basedon[]" value="Tiny Core">Tiny Core<br>
+<input type="checkbox" name="basedon[]" value="Void">Void<br>
+<input type="checkbox" name="basedon[]" value="Zenwalk">Zenwalk<br>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<div><b>Desktop environment</b></div>
+<table style="width: 100%">
+<tr>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="desktop[]" value="All">All<br>
+<input type="checkbox" name="desktop[]" value="No desktop">No desktop<br>
+<input type="checkbox" name="desktop[]" value="AfterStep">AfterStep<br>
+<input type="checkbox" name="desktop[]" value="Android">Android<br>
+<input type="checkbox" name="desktop[]" value="Awesome">Awesome<br>
+<input type="checkbox" name="desktop[]" value="Blackbox">Blackbox<br>
+<input type="checkbox" name="desktop[]" value="bspwm">bspwm<br>
+<input type="checkbox" name="desktop[]" value="Budgie">Budgie<br>
+<input type="checkbox" name="desktop[]" value="Cinnamon">Cinnamon<br>
+<input type="checkbox" name="desktop[]" value="ChromeOS">ChromeOS<br>
+<input type="checkbox" name="desktop[]" value="Consort">Consort<br>
+<input type="checkbox" name="desktop[]" value="COSMIC">COSMIC<br>
+<input type="checkbox" name="desktop[]" value="Deepin">Deepin<br>
+<input type="checkbox" name="desktop[]" value="dk">dk<br>
+<input type="checkbox" name="desktop[]" value="DankMaterialShell">DankMaterialShell<br>
+<input type="checkbox" name="desktop[]" value="dwm">dwm<br>
+<input type="checkbox" name="desktop[]" value="Enlightenment">Enlightenment<br>
+<input type="checkbox" name="desktop[]" value="Equinox">Equinox<br>
+<input type="checkbox" name="desktop[]" value="Firefox">Firefox<br>
+<input type="checkbox" name="desktop[]" value="Fluxbox">Fluxbox<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="desktop[]" value="flwm">flwm<br>
+<input type="checkbox" name="desktop[]" value="FVWM">FVWM<br>
+<input type="checkbox" name="desktop[]" value="Gershwin">Gershwin<br>
+<input type="checkbox" name="desktop[]" value="GNOME">GNOME<br>
+<input type="checkbox" name="desktop[]" value="GNOME Mobile">GNOME Mobile<br>
+<input type="checkbox" name="desktop[]" value="Hackedbox">Hackedbox<br>
+<input type="checkbox" name="desktop[]" value="herbstluftwm">herbstluftwm<br>
+<input type="checkbox" name="desktop[]" value="Hyprland">Hyprland<br>
+<input type="checkbox" name="desktop[]" value="i3">i3<br>
+<input type="checkbox" name="desktop[]" value="IceWM">IceWM<br>
+<input type="checkbox" name="desktop[]" value="ion">ion<br>
+<input type="checkbox" name="desktop[]" value="JWM">JWM<br>
+<input type="checkbox" name="desktop[]" value="KDE">KDE<br>
+<input type="checkbox" name="desktop[]" value="KDE Plasma">KDE Plasma<br>
+<input type="checkbox" name="desktop[]" value="Kodi">Kodi<br>
+<input type="checkbox" name="desktop[]" value="labwc">labwc<br>
+<input type="checkbox" name="desktop[]" value="LeftWM">LeftWM<br>
+<input type="checkbox" name="desktop[]" value="Lesstif">Lesstif<br>
+<input type="checkbox" name="desktop[]" value="Lomiri">Lomiri<br>
+<input type="checkbox" name="desktop[]" value="Lumina">Lumina<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="desktop[]" value="LXDE">LXDE<br>
+<input type="checkbox" name="desktop[]" value="LXQt">LXQt<br>
+<input type="checkbox" name="desktop[]" value="Matchbox">Matchbox<br>
+<input type="checkbox" name="desktop[]" value="MATE">MATE<br>
+<input type="checkbox" name="desktop[]" value="Maynard">Maynard<br>
+<input type="checkbox" name="desktop[]" value="Metacity">Metacity<br>
+<input type="checkbox" name="desktop[]" value="Mezzo">Mezzo<br>
+<input type="checkbox" name="desktop[]" value="Moblin">Moblin<br>
+<input type="checkbox" name="desktop[]" value="Mokka">Mokka<br>
+<input type="checkbox" name="desktop[]" value="Moksha">Moksha<br>
+<input type="checkbox" name="desktop[]" value="NebiDE">NebiDE<br>
+<input type="checkbox" name="desktop[]" value="Niri">Niri<br>
+<input type="checkbox" name="desktop[]" value="Noctalia">Noctalia<br>
+<input type="checkbox" name="desktop[]" value="Openbox">Openbox<br>
+<input type="checkbox" name="desktop[]" value="Pantheon">Pantheon<br>
+<input type="checkbox" name="desktop[]" value="Pearl">Pearl<br>
+<input type="checkbox" name="desktop[]" value="pekwm">pekwm<br>
+<input type="checkbox" name="desktop[]" value="Phosh">Phosh<br>
+<input type="checkbox" name="desktop[]" value="PIXEL">PIXEL<br>
+<input type="checkbox" name="desktop[]" value="Plasma Mobile">Plasma Mobile<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="desktop[]" value="Qtile">Qtile<br>
+<input type="checkbox" name="desktop[]" value="Ratpoison">Ratpoison<br>
+<input type="checkbox" name="desktop[]" value="Razor-qt">Razor-qt<br>
+<input type="checkbox" name="desktop[]" value="River">River<br>
+<input type="checkbox" name="desktop[]" value="SLWM">SLWM<br>
+<input type="checkbox" name="desktop[]" value="Sugar">Sugar<br>
+<input type="checkbox" name="desktop[]" value="Sway">Sway<br>
+<input type="checkbox" name="desktop[]" value="Sxmo">Sxmo<br>
+<input type="checkbox" name="desktop[]" value="Trinity">Trinity<br>
+<input type="checkbox" name="desktop[]" value="TWM">TWM<br>
+<input type="checkbox" name="desktop[]" value="UKUI">UKUI<br>
+<input type="checkbox" name="desktop[]" value="Unity">Unity<br>
+<input type="checkbox" name="desktop[]" value="Wayfire">Wayfire<br>
+<input type="checkbox" name="desktop[]" value="WebUI">WebUI<br>
+<input type="checkbox" name="desktop[]" value="WMaker">WMaker<br>
+<input type="checkbox" name="desktop[]" value="WMFS">WMFS<br>
+<input type="checkbox" name="desktop[]" value="WMI">WMI<br>
+<input type="checkbox" name="desktop[]" value="Xfce">Xfce<br>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<div><b>Architecture</b></div>
+<table style="width: 100%">
+<tr>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="architecture[]" value="All">All<br>
+<input type="checkbox" name="architecture[]" value="aarch64">aarch64<br>
+<input type="checkbox" name="architecture[]" value="acorn26">acorn26<br>
+<input type="checkbox" name="architecture[]" value="acorn32">acorn32<br>
+<input type="checkbox" name="architecture[]" value="alpha">alpha<br>
+<input type="checkbox" name="architecture[]" value="amiga">amiga<br>
+<input type="checkbox" name="architecture[]" value="arc">arc<br>
+<input type="checkbox" name="architecture[]" value="arm">arm<br>
+<input type="checkbox" name="architecture[]" value="armv5tel">armv5tel<br>
+<input type="checkbox" name="architecture[]" value="armel">armel<br>
+<input type="checkbox" name="architecture[]" value="armhf">armhf<br>
+<input type="checkbox" name="architecture[]" value="armv7">armv7<br>
+<input type="checkbox" name="architecture[]" value="armv8">armv8<br>
+<input type="checkbox" name="architecture[]" value="atari">atari<br>
+<input type="checkbox" name="architecture[]" value="cats">cats<br>
+<input type="checkbox" name="architecture[]" value="cobalt">cobalt<br>
+<input type="checkbox" name="architecture[]" value="dreamcast">dreamcast<br>
+<input type="checkbox" name="architecture[]" value="emips">emips<br>
+<input type="checkbox" name="architecture[]" value="evbarm">evbarm<br>
+<input type="checkbox" name="architecture[]" value="evbmips">evbmips<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="architecture[]" value="evbppc">evbppc<br>
+<input type="checkbox" name="architecture[]" value="evbsh3">evbsh3<br>
+<input type="checkbox" name="architecture[]" value="ews4800mips">ews4800mips<br>
+<input type="checkbox" name="architecture[]" value="hp300">hp300<br>
+<input type="checkbox" name="architecture[]" value="hp700">hp700<br>
+<input type="checkbox" name="architecture[]" value="hpcarm">hpcarm<br>
+<input type="checkbox" name="architecture[]" value="hpcmips">hpcmips<br>
+<input type="checkbox" name="architecture[]" value="hpcsh">hpcsh<br>
+<input type="checkbox" name="architecture[]" value="hppa">hppa<br>
+<input type="checkbox" name="architecture[]" value="i386">i386<br>
+<input type="checkbox" name="architecture[]" value="i486">i486<br>
+<input type="checkbox" name="architecture[]" value="i586">i586<br>
+<input type="checkbox" name="architecture[]" value="i686">i686<br>
+<input type="checkbox" name="architecture[]" value="ia64">ia64<br>
+<input type="checkbox" name="architecture[]" value="ibmnws">ibmnws<br>
+<input type="checkbox" name="architecture[]" value="IBM Z">IBM Z<br>
+<input type="checkbox" name="architecture[]" value="ix86">ix86<br>
+<input type="checkbox" name="architecture[]" value="loongarch64">loongarch64<br>
+<input type="checkbox" name="architecture[]" value="luna68k">luna68k<br>
+<input type="checkbox" name="architecture[]" value="m68010">m68010<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="architecture[]" value="m68k">m68k<br>
+<input type="checkbox" name="architecture[]" value="mips">mips<br>
+<input type="checkbox" name="architecture[]" value="mipsco">mipsco<br>
+<input type="checkbox" name="architecture[]" value="mipsel">mipsel<br>
+<input type="checkbox" name="architecture[]" value="mvme68k">mvme68k<br>
+<input type="checkbox" name="architecture[]" value="mvmeppc">mvmeppc<br>
+<input type="checkbox" name="architecture[]" value="news68k">news68k<br>
+<input type="checkbox" name="architecture[]" value="newsmips">newsmips<br>
+<input type="checkbox" name="architecture[]" value="ns32k">ns32k<br>
+<input type="checkbox" name="architecture[]" value="ofppc">ofppc<br>
+<input type="checkbox" name="architecture[]" value="pmax">pmax<br>
+<input type="checkbox" name="architecture[]" value="Power">Power<br>
+<input type="checkbox" name="architecture[]" value="powerpc">powerpc<br>
+<input type="checkbox" name="architecture[]" value="ppc64">ppc64<br>
+<input type="checkbox" name="architecture[]" value="ppc64el">ppc64el<br>
+<input type="checkbox" name="architecture[]" value="ppc64le">ppc64le<br>
+<input type="checkbox" name="architecture[]" value="prep">prep<br>
+<input type="checkbox" name="architecture[]" value="ps2">ps2<br>
+<input type="checkbox" name="architecture[]" value="ps3">ps3<br>
+<input type="checkbox" name="architecture[]" value="riscv">riscv<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="architecture[]" value="riscv64">riscv64<br>
+<input type="checkbox" name="architecture[]" value="s390">s390<br>
+<input type="checkbox" name="architecture[]" value="s390x">s390x<br>
+<input type="checkbox" name="architecture[]" value="sandpoint">sandpoint<br>
+<input type="checkbox" name="architecture[]" value="sgimips">sgimips<br>
+<input type="checkbox" name="architecture[]" value="sh3eb">sh3eb<br>
+<input type="checkbox" name="architecture[]" value="sh3el">sh3el<br>
+<input type="checkbox" name="architecture[]" value="sh5">sh5<br>
+<input type="checkbox" name="architecture[]" value="shark">shark<br>
+<input type="checkbox" name="architecture[]" value="sparc32">sparc32<br>
+<input type="checkbox" name="architecture[]" value="sparc64">sparc64<br>
+<input type="checkbox" name="architecture[]" value="sun2">sun2<br>
+<input type="checkbox" name="architecture[]" value="sun3">sun3<br>
+<input type="checkbox" name="architecture[]" value="vax">vax<br>
+<input type="checkbox" name="architecture[]" value="x68k">x68k<br>
+<input type="checkbox" name="architecture[]" value="x86_64">x86_64<br>
+<input type="checkbox" name="architecture[]" value="x86-64-v2">x86-64-v2<br>
+<input type="checkbox" name="architecture[]" value="x86-64-v3">x86-64-v3<br>
+<input type="checkbox" name="architecture[]" value="xbox">xbox<br>
+<input type="checkbox" name="architecture[]" value="zaurus">zaurus<br>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<div><b>Package management</b></div>
+<table style="width: 100%">
+<tr>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="package[]" value="All">All<br>
+<input type="checkbox" name="package[]" value="None/Unknown">None/Unknown<br>
+<input type="checkbox" name="package[]" value="DEB">DEB<br>
+<input type="checkbox" name="package[]" value="Flatpak">Flatpak<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="package[]" value="Luet">Luet<br>
+<input type="checkbox" name="package[]" value="Nix/Guix">Nix/Guix<br>
+<input type="checkbox" name="package[]" value="RPM">RPM<br>
+<input type="checkbox" name="package[]" value="Pacman">Pacman<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="package[]" value="PET">PET<br>
+<input type="checkbox" name="package[]" value="PiSi">PiSi<br>
+<input type="checkbox" name="package[]" value="Portage">Portage<br>
+<input type="checkbox" name="package[]" value="snap">snap<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="package[]" value="TGZ/TXZ">TGZ/TXZ<br>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<div><b>Release model</b></div>
+<table style="width: 100%">
+<tr>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="rolling[]" value="All" checked>All<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="rolling[]" value="Fixed">Fixed<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="rolling[]" value="Fixed (LTS)">Fixed (LTS)<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="rolling[]" value="Semi-Rolling">Semi-Rolling<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="rolling[]" value="Rolling">Rolling<br>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<div><b>Install media size</b></div>
+<table style="width: 100%">
+<tr><td style="border: 0px;"><input type="checkbox" name="isosize[]" value="All">All<br>
+</td><td style="border: 0px;"><input type="checkbox" name="isosize[]" value="Under 100MB">Under 100MB<br>
+</td><td style="border: 0px;"><input type="checkbox" name="isosize[]" value="Under 250MB">Under 250MB<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="isosize[]" value="Under 700MB">Under 700MB<br>
+</td><td style="border: 0px;"><input type="checkbox" name="isosize[]" value="Under 2000MB">Under 2000MB<br>
+</td><td style="border: 0px;"><input type="checkbox" name="isosize[]" value="Over 2000MB">Over 2000MB<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="isosize[]" value="Over 5000MB">Over 5000MB<br>
+</td></tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<div><b>Install method</b></div>
+<table style="width: 100%">
+<tr><td style="border: 0px;"><input type="checkbox" name="netinstall[]" value="All">All<br>
+</td><td style="border: 0px;"><input type="checkbox" name="netinstall[]" value="Local">Local<br>
+</td><td style="border: 0px;"><input type="checkbox" name="netinstall[]" value="Net-Install">Net-Install<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="netinstall[]" value="OEM">OEM<br>
+</td></tr></table>
+</td></tr>
+<tr>
+<td>
+<div><b>Multi-language support</b></div>
+<table style="width: 100%">
+<tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="All">All<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="Yes/Other">Yes/Other<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="No">No<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="ar">ar<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="arabic">arabic<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="aragonese">aragonese<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="az">az<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="Bengali">Bengali<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="bg">bg<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="bn">bn<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="by">by<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="ca">ca<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="catalan">catalan<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="cn">cn<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="cs">cs<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="cz">cz<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="da">da<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="de">de<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="dk">dk<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="Dzongkha">Dzongkha<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="ee">ee<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="en">en<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="es">es<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="et">et<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="eu">eu<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="fa">fa<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="Farsi">Farsi<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="fi">fi<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="fo">fo<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="fr">fr<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="galician">galician<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="gl">gl<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="gr">gr<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="Gujarati">Gujarati<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="Hausa">Hausa<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="he">he<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="hi">hi<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="Hindi">Hindi<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="hk">hk<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="hr">hr<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="hu">hu<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="id">id<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="Igbo">Igbo<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="il">il<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="in">in<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="is">is<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="ISO">ISO<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="it">it<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="ja">ja<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="jp">jp<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="ko">ko<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="kr">kr<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="lt">lt<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="lv">lv<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="Malayalam">Malayalam<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="ml">ml<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="mn">mn<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="mr">mr<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="ms">ms<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="nb">nb<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="Nepali">Nepali<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="nl">nl<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="nn">nn<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="no">no<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="ph">ph<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="pl">pl<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="po">po<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="pt">pt<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="pt_br">pt_br<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="Punjabi">Punjabi<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="ro">ro<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="rs">rs<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="ru">ru<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="se">se<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="si">si<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="sk">sk<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="sv">sv<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="Tamil">Tamil<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="te">te<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="Telugu">Telugu<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="th">th<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="tr">tr<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="tw">tw<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="ua">ua<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="uk">uk<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="valencian">valencian<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="vn">vn<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="Yoruba">Yoruba<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="yu">yu<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="zh">zh<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="language[]" value="zh_CN">zh_CN<br>
+</td><td style="border: 0px;"><input type="checkbox" name="language[]" value="zh_TW">zh_TW<br>
+</td></tr></table>
+</td></tr>
+<tr>
+<td>
+<div><b>Init software</b></div>
+<table style="width: 100%">
+<tr><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="All">All<br>
+</td><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="Dinit">Dinit<br>
+</td><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="OpenRC">OpenRC<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="RC">RC<br>
+</td><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="runit">runit<br>
+</td><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="s6">s6<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="Shepherd">Shepherd<br>
+</td><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="Suite66">Suite66<br>
+</td><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="systemd">systemd<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="SysV">SysV<br>
+</td><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="Upstart">Upstart<br>
+</td><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="Not systemd">Not systemd<br>
+</td></tr><tr><td style="border: 0px;"><input type="checkbox" name="defaultinit[]" value="Other">Other<br>
+</td></tr></table>
+</td></tr>
+<tr>
+<td>
+<div><b>Status</b></div>
+<table style="width: 100%">
+<tr>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="status[]" value="All">All<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="status[]" value="Active" checked>Active<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="status[]" value="Dormant">Dormant<br>
+</td>
+<td style="width: 25%; border: none; vertical-align: top" >
+<input type="checkbox" name="status[]" value="Discontinued">Discontinued<br>
+</td>
+</tr></table>
+</td></tr>
+<tr>
+<td style="border: none"><br><div><input type="submit" value="Submit Query"></div></td></table><br>
+</form><br><br>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+  </td>
+  <td style="width: 25%; vertical-align: top; border: none">
+      <table class="News">
+        <tr>
+          <th class="Invert">TUXEDO</th>
+        </tr>
+        <tr>
+          <td class="News" style="text-align: center; padding: 10px;">
+            <a href="k/tuxedo.php"><img src="images/k/txd.png" alt="TUXEDO Computers" style="width: 100%; max-width: 190px;"></a><br /><br />
+<b>TUXEDO Computers - Linux Hardware in a tailor made suite</b><br />Choose from a wide range of laptops and PCs in various sizes and shapes at <a href="/k/tuxedo.php">TUXEDOComputers.com</a>. Every machine comes pre-installed and ready-to-run with <a href="k/tuxedo.php">Linux</a>. Full <b>24 months of warranty</b> and lifetime support included!<br /><br />Learn more about our <a href="k/why-tuxedo.php">full service package</a> and all benefits from buying at TUXEDO.
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table class="News">
+        <tr>
+          <th class="Invert">Star Labs</th>
+        </tr>
+        <tr>
+          <td class="News" style="text-align: center"><br>
+            <a href="https://starlabs.systems/"><img src="images/k/starlabs.png" alt="Star Labs Systems | Laptops designed for Linux" style="width: 100%; max-width: 200px;"></a><br><br>
+<b>Star Labs - Laptops built for Linux.</b><br>
+View our range including the highly anticipated <a href="https://starlabs.systems/pages/starfighter">StarFighter</a>. Available with coreboot open-source firmware and a choice of Ubuntu, elementary, Manjaro and more. Visit <a href="https://starlabs.systems">Star Labs</a> for information, to buy and get support.<br><br>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table class="News">
+        <tr>
+          <th class="Invert">Parted Magic</th>
+        </tr>
+        <tr>
+          <td class="News" style="text-align: center"><br>
+            <a href="https://partedmagic.com/store/?ref=8"><img src="images/k/ygjfvabdhnug" alt="Parted Magic - a complete hard disk management solution" title="Parted Magic - a complete hard disk management solution"></a><br><br>
+            <a href="https://partedmagic.com/store/?ref=8"><b>Parted Magic - a complete hard disk management solution</b></a><br /><br />Disk Partitioning &bull; Disk Cloning &bull; Data Rescue &bull; Disk Erasing &bull; Benchmarking<br><br>
+          </td>
+        </tr>
+      </table>
+      <br>
+    </td>
+</table><br>
+<br /><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2079470915748165"
+     crossorigin="anonymous"></script>
+<!-- bilboard -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2079470915748165"
+     data-ad-slot="9545897153"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><hr><table style="width: 100%">  <tr><td style="width: 100%; text-align: center; border: 0px">Copyright &copy; 2001 - 2026 Atea Ataroa Limited. All rights reserved. All trademarks are the property of their respective owners. <a href="dwres.php?resource=privacy">Privacy policy</a>. <a href="#" onclick="if(window.__lxG__consent__ !== undefined) {window.__lxG__consent__.showConsent()} else {alert('This function only for users from European Economic Area (EEA)')}; return false">Change privacy settings</a>.<br />DistroWatch.com is hosted at Copenhagen.<br /><br />Contact, corrections and suggestions: <a href="mailto:&#100;&#105;&#115;&#116;&#114;&#111;&#64;&#100;&#105;&#115;&#116;&#114;&#111;&#119;&#97;&#116;&#99;&#104;&#46;&#99;&#111;&#109;">Jesse Smith</a><br /><br />
+Tips: <img src="images/other/bitcoin16.png" title="Bitcoin" > bc1qxes3k2wq3uqzr074tkwwjmwfe63z70gwzfu4lx <br> <img src="images/other/lightning16.png" title="Bitcoin Lightning" > lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhhxarpw3jkc7tzw4ex6cfexyfua2nr <br> <img src="images/other/monero16.png" title="Monero" > 86fA3qPTeQtNb2k1vLwEQaAp3XxkvvvXt69gSG5LGunXXikK9koPWZaRQgfFPBPWhMgXjPjccy9LA9xRFchPWQAnPvxh5Le <br /> <a href="https://www.paypal.me/distrow">PayPal.me/distrow</a> &bull; <a href="https://www.patreon.com/distrowatch">Patreon.com/distrowatch</a>    </td>
+  </tr>
+</table><br />
+<br /><br /><br /><br /><br />
+</body>
+</html>
