@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS distro  (
+    name VARCHAR(100) PRIMARY KEY,
+    homepage VARCHAR(512),
+    description TEXT,
+    distrowatch_url VARCHAR(512),
+    image_url VARCHAR(512),
+    based_on VARCHAR(255),
+    architectures TEXT[],
+    categories TEXT[],
+    popularity VARCHAR(50),
+    package_management VARCHAR(100),
+    documentation VARCHAR(512),
+    user_forum VARCHAR(512),
+    alt_user_forums TEXT[],
+    bug_tracker VARCHAR(512),
+    last_version VARCHAR(50),
+    release_date VARCHAR(50),
+    origin VARCHAR(100),
+    status VARCHAR(50)
+);
