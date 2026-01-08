@@ -1,4 +1,4 @@
-# DistroChooser
+# YetAnotherDistroChooser
 
 ### Author: Nikitza Inc (Nikita Ermilov) 5130904/30106
 
