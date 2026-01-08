@@ -1,0 +1,61 @@
+services:
+  back:
+    build:
+      context: ./distrochooser-back
+      dockerfile: Dockerfile
+    container_name: yadc-back
+    restart: on-failure
+    ports:
+      - "8081:8081"
+    env_file:
+      - .env
+    environment:
+      SPRING_DATASOURCE_URL: ${DB_URL}
+      SPRING_DATASOURCE_USERNAME: ${DB_USER}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - net-yadc
+
+  front:
+    build:
+      context: ./distrochooser-front
+      dockerfile: Dockerfile
+      args:
+        - VUE_APP_BACKEND_URL=${BACKEND_URL}
+    container_name: yadc-front
+    ports:
+      - "3000:80"
+    depends_on:
+      - back
+    networks:
+      - net-yadc
+
+  db:
+    image: postgres:18.1-alpine
+    container_name: yadc-db
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}" ]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    ports:
+      - "5433:5432"
+    volumes:
+      - db-data:/var/lib/postgres/distro_db
+    networks:
+      - net-yadc
+
+volumes:
+  db-data:
+
+networks:
+  net-yadc:
+    driver: bridge
