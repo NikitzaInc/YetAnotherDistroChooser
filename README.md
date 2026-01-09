@@ -12,11 +12,6 @@ This app wouldn't be possible without [Distrowatch](https://distrowatch.com/) an
 ```
 git clone https://github.com/NikitzaInc/YetAnotherDistroChooser.git
 ```
-* Set up a postgres database, create user. More about it [here](https://www.postgresql.org/docs/current/runtime.html).
-```
-mkdir /var/lib/postgres/data
-initdb -D /path/to/data/directory
-```
 * Create `.env` file and fill it with your values, example you can find in `origin.env`.
 ####
 * Build the project:
