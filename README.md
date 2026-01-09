@@ -5,7 +5,7 @@
 This app was made to make the choise of distribution easier. If you are looking for lightweight distro for your laptop, or stable and configurable system for your server, this service is for you! It allows filtering by the hardware, needed packages, personal preferrences and user experience. 
 
 ### Dependencies
-This app wouldn't be possible without [Distrowatch](https://distrowatch.com/), go check them out! I also included links to other projects i found interesting.
+This app wouldn't be possible without [Distrowatch](https://distrowatch.com/) and [Repology](https://repology.org/), go check them out! I also included links to other projects i found interesting.
 
 ### Building locally
 * Clone this repository: 
