@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <TheHeader />
+    <TheHeader @navigate="handleNavigation" />
     
     <main class="container">
       <QuizIntro v-if="step === 'intro'" @start="step = 'quiz'" />
@@ -15,6 +15,8 @@
         :points="points" 
         :settings="settings" 
       />
+
+      <ProjectSearch v-else-if="step === 'search'" />
     </main>
   </div>
 </template>
@@ -25,9 +27,16 @@ import TheHeader from './components/UpBar.vue'
 import QuizIntro from './components/QuizIntro.vue'
 import QuizCard from './components/QuizCard.vue'
 import QuizResults from './components/QuizResults.vue'
+import ProjectSearch from './components/ProjectSearch.vue' // Import new component
 
 export default {
-  components: { TheHeader, QuizIntro, QuizCard, QuizResults },
+  components: { 
+    TheHeader, 
+    QuizIntro, 
+    QuizCard, 
+    QuizResults, 
+    ProjectSearch
+  },
   data() {
     return {
       step: 'intro',
@@ -40,6 +49,10 @@ export default {
       this.points = points;
       this.settings = settings;
       this.step = 'results';
+    },
+    handleNavigation(target) {
+      this.step = target;
+      if (target === 'intro') { this.points = {}; }
     }
   }
 }

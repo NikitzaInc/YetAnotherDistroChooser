@@ -1,14 +1,27 @@
 <template>
   <header class="main-header">
     <div class="header-content">
-      <a href="/" class="logo-link">
+      <div class="logo-link" @click="$emit('navigate', 'intro')" style="cursor: pointer;">
         <div class="logo-container">
           <img src="../assets/logo-nobg.png" alt="YADC Logo" class="logo-img" />
           <span class="logo-text">YetAnotherDistroChooser</span>
         </div>
-      </a>
+      </div>
 
       <nav class="resources-container">
+        <button 
+          @click="$emit('navigate', 'search')" 
+          class="resource-item btn-resource"
+        >
+          <img src="../assets/magnifying-glass.svg" alt="DB Icon" class="link-icon" />
+          <span>
+            <div>Check apps</div>
+            <div>(Availability)</div>
+          </span>
+        </button>
+
+        <span class="separator">|</span>
+
         <span class="resources-label">Useful Resources:</span>
         
         <a href="https://distrowatch.com/" target="_blank" rel="noopener noreferrer" class="resource-item">
@@ -40,6 +53,7 @@
 </template>
 
 <style scoped>
+
 .main-header {
   width: 100%;
   background-color: var(--secondary);
@@ -92,6 +106,12 @@
   display: none;
 }
 
+.separator {
+  color: rgba(255,255,255,0.3);
+  font-size: 1.5rem;
+  margin: 0 5px;
+}
+
 @media (min-width: 850px) {
   .resources-label {
     display: inline-block;
@@ -111,6 +131,14 @@
   transition: background-color 0.2s ease, transform 0.1s;
 }
 
+.btn-resource {
+  background: none;
+  /* border: 1px solid rgba(255,255,255,0.2); */
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+
 .resource-item:hover {
   background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-1px);
@@ -120,6 +148,5 @@
   width: 20px;
   height: 20px;
   object-fit: contain;
-  /* Optional: if your SVGs are black and you need them white, you might need filter: invert(1); here depending on theme */
 }
 </style>
