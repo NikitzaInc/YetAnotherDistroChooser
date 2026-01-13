@@ -1,8 +1,6 @@
 # YetAnotherDistroChooser
 
-### Author: Nikitza Inc (Nikita Ermilov) 5130904/30106
-
-This app was made to make the choise of distribution easier. If you are looking for lightweight distro for your laptop, or stable and configurable system for your server, this service is for you! It allows filtering by the hardware, needed packages, personal preferrences and user experience. 
+This app was made to make the choise of distribution easier. I'm not going to advertise it too much, it's fairly small and simple project I initially made for uni, but I don't want to throw it to the bin yet. 
 
 ### Dependencies
 This app wouldn't be possible without [Distrowatch](https://distrowatch.com/) and [Repology](https://repology.org/), go check them out! I also included links to other projects i found interesting.
